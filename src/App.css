@@ -1,0 +1,269 @@
+.App {
+  background: #141614;
+  color: #FBFBFB;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #141614;
+  color: #fbfbfb;
+}
+
+/* Navbar & Header */
+.header {
+  display: block;
+  padding-top: 15px;
+}
+
+.navbar {
+  align-items: center;
+  color: white;
+}
+
+#nav-item {
+  color: white;
+  position: absolute;
+  top: 12px;
+  right: 160px;
+}
+.community-icons-row {
+  display: block;
+  font-size: 1em;
+}
+
+.community-icons {
+  display: inline-block;
+  padding: 5px 5px 15px 15px;
+  color: white;
+  position: absolute;
+}
+
+.community-icons:hover {
+  -webkit-transform:scale(1.06); /* Safari and Chrome */
+	-moz-transform:scale(1.06); /* Firefox */
+	-ms-transform:scale(1.06); /* IE 9 */
+	-o-transform:scale(1.06); /* Opera */
+	transform:scale(1.06);
+}
+
+.discord-link {
+  top: 0;
+  left: 0;
+}
+
+.twitter-link {
+  top: 0;
+  left: 50px;
+}
+
+.opensea-icon {
+  top: 0;
+  left: 100px;
+}
+
+#nav-title {
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.wallet-button .connect-wallet {
+	font-family: sans-serif;
+  text-align: center;
+  line-height: 50px;;
+	border: 1.5px solid #ffc107;
+	border-radius: 4rem;
+  overflow: hidden;
+  outline: none;
+  color: #fff;
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all .5s ease;
+  margin-right: 20px;
+}
+
+.connect-wallet:hover {
+  background: #ffc107;
+  color: #141614;
+}
+
+.wallet-root {
+  display: block;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 50px;;
+	border: 1.5px solid #ffc107;
+  margin: 50px 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+	border-radius: 4rem;
+  overflow: hidden;
+  outline: none;
+  color: #fff;
+  background: none;
+  transition: all .5s ease;
+}
+
+/* Minting Cards */
+.mint-cards {
+  display: flex;
+  justify-content: center;
+  margin: 0 30px 30px 30px;
+  padding: 10px 0 10px 0;
+  background: #141614 !important;
+  min-height: 20rem;
+}
+
+.mint-card-row {
+  display: inline-block;
+}
+
+.normal-mint {
+  display: inline-block;
+  min-width: 22rem;
+  max-width: 36rem;
+  border: 3px solid #ffc107;
+}
+
+.card {
+  border: 3px solid #ffc107;
+  max-height: 20rem;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card-info {
+  text-align: center;
+  padding-top: 5px;
+  margin-top: 15px;
+}
+
+.mint-amount-input {
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+input {
+  text-align: center;
+  background: none;
+  color: white;
+  border: 1.5px solid #fff;
+  margin-top: 15px;
+}
+
+.btn {
+  color: white !important;
+  background: none;
+  border: 1.5px solid #fff;
+}
+
+.btn:hover {
+  -webkit-transform:scale(1.03); /* Safari and Chrome */
+	-moz-transform:scale(1.03); /* Firefox */
+	-ms-transform:scale(1.03); /* IE 9 */
+	-o-transform:scale(1.03); /* Opera */
+	transform:scale(1.03);
+  background: none;
+  border: 1.5px solid #fff;
+}
+
+.btn:focus {
+  background: none;
+  border: 1.5px solid #fff;
+}
+
+.main-mint-btn {
+  text-align: center;
+}
+
+.legendary-watches {
+  display: inline-block;
+  padding: 5px 45px;
+}
+
+/* Line breaks between sections */
+hr {
+  /* border-top: 0.1px solid #FFDF4F;
+  border-bottom: 0.1px solid #FFDF4F;
+  margin: 15px 65px; */
+  border: 0;
+  height: .90px;
+  color: #ffc107;
+  /* background-image: linear-gradient(to right, #ffc107, #ffd700); */
+  /* max-width: 80%; */
+}
+
+.hr-text {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+}
+/* .hr-text:before {
+    content: ''; */
+    /* // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar */
+    /* background: linear-gradient(to right, transparent, #ffd700, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+} */
+/* .hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: #ffd700;
+    padding: 0 .5em;
+    line-height: 1.5em; */
+    /* // this is really the only tricky part, you need to specify the background color of the container element... */
+    /* color: #fff;
+    background-color: #141614;
+} */
+
+.story-root {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#roadmap {
+  font-style: italic;
+}
+
+.team-root {
+  display: block;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.team-header {
+  text-align: center;
+}
+
+.team-members {
+  display: inline-block;
+  padding: 10px 20px;
+}
