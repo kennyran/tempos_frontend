@@ -4,17 +4,37 @@ import foxicon from '../img/metamask_icon.png';
 // import CoinbaseWallet from '../img/coinbaseWallet_Icon.svg';
 
 import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal'
 
 export default class walletModal extends React.Component {
     onClose = e => {
         this.props.onClose && this.props.onClose(e)
     }
+    // e => { this.modalPopUp(e)}
+
+    state = {
+        show: false
+    }
+
+    handleShow = () => {
+        this.setState({
+          show: true
+        })
+      }
+    
+      handleClose = () => {
+        this.setState({
+          show: false
+        })
+    }
+    
     render() {
         if (!this.props.show) {
             return null
         }
         return ( 
         
+        <Modal show={this.state.show} onHide={this.state.handleClose}>
         <div className="wallet-root">
             <div>
                 <p>Connect a wallet</p>
@@ -22,7 +42,7 @@ export default class walletModal extends React.Component {
             <div class="walletButtons">
                 {/* Metamask wallet install */}
                 <a target="_blank" rel="noreferrer noopener" href="https://metamask.io/">
-                    <Button id="connect-Metamask">
+                    <Button variant="light" id="connect-Metamask">
                         <div id="button-text">
                             <div>Install Metamask</div>
                         </div>
@@ -53,10 +73,13 @@ export default class walletModal extends React.Component {
                 </button> */}
             </div>
         
-            {/* <div>
-                <button onClick={this.onClose}>Close</button>
-            </div> */}
+            <div>
+                <Button variant="light" onClick={this.handleClose}>Close</Button>
+            </div>
         </div>
+
+        </Modal>
+        
         )
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import discord from '../img/discord.png'
-// import twitter from '../img/twitter.png'
-// import opensea from '../img/opensea.svg'
+import twitter from '../img/twitter.png'
+import opensea from '../img/opensea.svg'
 import '../App.css';
 
 export default class Community extends React.Component {
@@ -15,15 +15,15 @@ export default class Community extends React.Component {
                             <img height="36" width="36" src={discord} alt="discord logo"></img>
                         </a>
                     </div>
-                    {/* <div className="community-icons twitter-link">
-                        <a target="_blank" rel="noreferrer noopener" id="social-links" href="https://twitter.com">
+                    <div className="community-icons twitter-link">
+                        <a target="_blank" rel="noreferrer noopener" id="social-links" href="https://twitter.com/Tempos_NFT">
                             <img height="36" width="36" src={twitter} alt="twitter logo, downloaded from fontawesome"></img>
                             </a>
                     </div>
                     <div className="community-icons opensea-icon">
-                        <a target="_blank" rel="noreferrer noopener" id="social-links" href="https://opensea.io">
+                        <a target="_blank" rel="noreferrer noopener" id="social-links" href="https://opensea.io/collection/temposnft">
                             <img height="36" width="36" src={opensea} alt="opensea logo"/></a>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         )

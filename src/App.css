@@ -27,6 +27,48 @@ body {
   top: 12px;
   right: 160px;
 }
+
+@media screen and (max-width: 575px) {
+  .community-icons {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .title {
+    display: none;
+  }
+
+  #nav-title {
+    display: none;
+  }
+
+  .small-title {
+    display: block;
+    text-align: center;
+  }
+
+  #sm-nav-title {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-style: italic;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .small-title {
+    display: none;
+  }
+
+  #sm-nav-title {
+    display: none;
+  }
+}
 .community-icons-row {
   display: block;
   font-size: 1em;
@@ -62,7 +104,13 @@ body {
   left: 100px;
 }
 
+.title {
+  display: block;
+  text-align: center;
+}
+
 #nav-title {
+  display: inline-block;
   color: white;
   text-align: center;
   margin: auto;
@@ -98,7 +146,8 @@ body {
   text-align: center;
   line-height: 50px;;
 	border: 1.5px solid #ffc107;
-  margin: 50px 350px;
+  margin: auto;
+  width: 22rem;
   padding-top: 10px;
   padding-bottom: 10px;
 	border-radius: 4rem;
@@ -108,6 +157,11 @@ body {
   background: none;
   transition: all .5s ease;
 }
+
+/* Section */
+/* section {
+  height: 100vh;
+} */
 
 /* Minting Cards */
 .mint-cards {
@@ -240,12 +294,54 @@ hr {
 } */
 
 .story-root {
-  margin-left: 150px;
-  margin-right: 150px;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .story-root {
+    font-size: 16px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  #roadmap-size {
+    max-width: 75%;
+    max-height: auto;
+  }
+
+  .team-root {
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  .story-root {
+    font-size: 16px;
+  }
+
+  #roadmap-size {
+    max-width: 75%;
+    max-height: auto;
+  }
+  
+  .team-members {
+    font-size: 16px;
+  }
 }
 
 #roadmap {
   font-style: italic;
+}
+
+#roadmap-size {
+  width: 50rem;
 }
 
 .team-root {
@@ -266,4 +362,9 @@ h3 {
 .team-members {
   display: inline-block;
   padding: 10px 20px;
+}
+
+.page-end {
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
