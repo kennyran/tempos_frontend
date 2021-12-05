@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 // =====// Watch image imports //======
 import batmanOyster from '../img/watches/batman-oyster.png'
-import batmanJubilee from '../img/watches/batman-jubilee.png'
+import batmanJubilee from '../img/watches/batmanjubilee.png'
 import pepsiOyster from '../img/watches/pepsi-oyster.png'
 import pepsiJubilee from '../img/watches/pepsi-jubilee.png'
 import subDate from '../img/watches/submariner-date.png'
