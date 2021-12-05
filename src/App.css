@@ -1,5 +1,6 @@
+/* Global Styles */
 .App {
-  background: #141614;
+  background: #000000;
   color: #FBFBFB;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -10,24 +11,45 @@ body {
   color: #fbfbfb;
 }
 
-/* Navbar & Header */
-.header {
-  display: block;
-  padding-top: 15px;
+h3 {
+  text-align: center;
+  font-weight: bold;
 }
 
+/* Section view height for each component */
+section {
+  min-height: 75vh;
+}
+
+/* Navbar & Header: Navbar.js */
 .navbar {
-  align-items: center;
+  /* align-items: center; */
   color: white;
+  width: 80%;
+  margin: auto;
 }
 
-#nav-item {
-  color: white;
-  position: absolute;
-  top: 12px;
-  right: 160px;
+.nav-link {
+  color: white !important;
 }
 
+.nav-link:active {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+#logo-header {
+  margin-top: -15px;
+}
+
+.justify-content-end {
+  justify-content: right;
+  flex: 1;
+  align-items: flex-end;
+  margin-right: -80px;
+}
+
+/* Media queries for different screen sizes */
 @media screen and (max-width: 575px) {
   .community-icons {
     display: none;
@@ -56,7 +78,25 @@ body {
     text-align: center;
     margin: auto;
     font-size: 40px;
-    font-style: italic;
+    font-weight: bold;
+  }
+
+  .learn-btn {
+    margin: auto;
+    text-align: center;
+  }
+
+  .linktree {
+    color: white;
+    text-decoration: none;
+  }
+
+  .linktree:hover {
+    color: white;
+  }
+
+  .art-sneakpeak, .card-art, .card-1, .card-2, .card-3 {
+    display: none;
   }
 }
 
@@ -69,6 +109,22 @@ body {
     display: none;
   }
 }
+
+/* Social Icons in top right of page: Community.js */
+.img-color {
+  color: white;
+  filter: brightness(0) invert(1);
+  height: 24px;
+  width: 24px;
+}
+
+.community-icons-root {
+  display: flex;
+  justify-content: right;
+  margin-right: 60px;
+  margin-bottom: -12.5px;
+  padding-top: 5px;
+}
 .community-icons-row {
   display: block;
   font-size: 1em;
@@ -76,9 +132,8 @@ body {
 
 .community-icons {
   display: inline-block;
-  padding: 5px 5px 15px 15px;
-  color: white;
-  position: absolute;
+  margin: 0 5px;
+  color: white !important;
 }
 
 .community-icons:hover {
@@ -89,36 +144,20 @@ body {
 	transform:scale(1.06);
 }
 
-.discord-link {
-  top: 0;
-  left: 0;
-}
-
-.twitter-link {
-  top: 0;
-  left: 50px;
-}
-
-.opensea-icon {
-  top: 0;
-  left: 100px;
-}
-
-.title {
-  display: block;
-  text-align: center;
-}
-
-#nav-title {
+/* #nav-title {
   display: inline-block;
   color: white;
   text-align: center;
   margin: auto;
   font-size: 40px;
   font-style: italic;
+} */
+
+.nav-mint-btn {
+  width: 130px;
 }
 
-.wallet-button .connect-wallet {
+/* .wallet-button .connect-wallet {
 	font-family: sans-serif;
   text-align: center;
   line-height: 50px;;
@@ -156,37 +195,147 @@ body {
   color: #fff;
   background: none;
   transition: all .5s ease;
-}
-
-/* Section */
-/* section {
-  height: 100vh;
 } */
 
-/* Minting Cards */
+/* Title and main section: mint.js */
+#mint {
+  width: 80%;
+  margin: auto;
+}
+.title-root {
+  display: block;
+  float: left;
+  text-align: left;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.title-block {
+  display: block;
+}
+
+.title {
+  font-size: 95px;
+  font-weight: bold;
+  display: inline-block;
+
+}
+
+.vert-text {
+  display: inline-block;
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+  font-size: 30px;
+  font-weight: bold;
+  width: 20px;
+  margin-left: 45px;
+  padding-left: 10px;
+}
+
+.learn-btn {
+  margin-top: 75px;
+}
+
+.linktree {
+  color: white;
+  text-decoration: none;
+}
+
+.linktree:hover {
+  color: white;
+}
+
+/* Minting Cards: mint.js */
 .mint-cards {
-  display: flex;
+  display: block;
   justify-content: center;
   margin: 0 30px 30px 30px;
   padding: 10px 0 10px 0;
-  background: #141614 !important;
   min-height: 20rem;
-}
-
-.mint-card-row {
-  display: inline-block;
+  float: right;
 }
 
 .normal-mint {
   display: inline-block;
-  min-width: 22rem;
-  max-width: 36rem;
-  border: 3px solid #ffc107;
+  width: 450px;
+  height: 225px;
+  background-color: #1d1d1d;
+  border: none;
+  text-align: left;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 
-.card {
-  border: 3px solid #ffc107;
-  max-height: 20rem;
+.card-text-row1, .card-text-row2, .card-text-row3, .input {
+  text-align: left;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: -3px;
+}
+
+.card-text-row1, .card-text-row2 {
+  color: #fc3637;
+  font-weight: bold;
+  margin: -14px;
+}
+
+.card-text-row2 {
+  font-size: 45px;
+}
+
+.normal-mint-btn {
+  background-color: #fc3637 !important;
+  border: none !important;
+  border-radius: 1px;
+  font-size: 16px;
+  width: 140px;
+  height: 40px;
+}
+
+.mint-card-img {
+  height: 350px;
+  width: 210px;
+  float: left;
+}
+
+.legendary-mint {
+  display: inline-block;
+  width: 450px;
+  height: 225px;
+  background-color: #1d1d1d;
+  border: none;
+  text-align: left;
+  overflow: hidden;
+}
+
+.leg-text-row1, .leg-text-row2, .leg-text-row3 {
+  text-align: left;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: -3px;
+}
+
+.leg-text-row1, .leg-text-row2 {
+  color: #c6c700;
+  font-weight: bold;
+  margin: -14px;
+}
+
+.leg-text-row2 {
+  font-size: 45px;
+}
+
+.leg-mint-btn {
+  background-color: #ffc107 !important;
+  border: none !important;
+  border-radius: 1px;
+  font-size: 16px;
+  width: 140px;
+  height: 40px;
+}
+
+.card-text {
+  text-align: center;
 }
 
 .card-title {
@@ -198,16 +347,19 @@ body {
 .card-info {
   text-align: center;
   padding-top: 5px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .mint-amount-input {
   justify-content: center;
   align-items: center;
   width: 160px;
-  margin: auto;
-  margin-top: 25px;
-  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.input {
+  margin-top: -20px;
+  margin-bottom: 12.5px;
 }
 
 input {
@@ -218,10 +370,19 @@ input {
   margin-top: 15px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Global button styles across all components */
+
 .btn {
   color: white !important;
   background: none;
   border: 1.5px solid #fff;
+  border-radius: 1px;
 }
 
 .btn:hover {
@@ -239,25 +400,224 @@ input {
   border: 1.5px solid #fff;
 }
 
-.main-mint-btn {
-  text-align: center;
-}
-
 .legendary-watches {
   display: inline-block;
   padding: 5px 45px;
 }
 
+/* Media query for screens up to 800px (iPads) */
+@media screen and (max-width: 800px) {
+  .App {
+    display: block;
+    float: none;
+  }
+  .title-root {
+    font-size: 18px;
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+  }
+
+  .title, .vert-text {
+    display: none;
+  }
+
+  .title-text {
+    font-size: 16px;
+  }
+
+  #mint {
+    width: 80%;
+    justify-content: center;
+    display: block;
+    float: none;
+  }
+
+  .card-img {
+    display: none;
+  }
+
+  .mint-cards {
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .normal-mint, .legendary-mint {
+    width: 250px;
+    height: 225px;
+    text-align: center;
+  }
+
+  .card-text-row1, .card-text-row2, .card-text-row3, .leg-text-row1, .leg-text-row2, .leg-text-row3 {
+    text-align: center;
+  }
+
+  input {
+    margin-left: 13%;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .story-root {
+    font-size: 16px;
+    text-align: left;
+    width: 80%;
+  }
+
+  /* .about-header {
+    text-align: center;
+    display: block;
+    font-size: 18px;
+  } */
+
+  #headers {
+    width: 80%;
+    text-align: center;
+  }
+
+  .about-header {
+    display: none;
+  }
+
+  .small-about-header {
+    font-size: 40px;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .small-about-title-row1 {
+    margin-bottom: -10px;
+  }
+
+  /* .about-title-row1, .about-title-row2 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  #art-cards {
+    display: none;
+  }
+
+  #roadmap {
+    max-width: 75%;
+    max-height: auto;
+    display: block;
+  }
+
+  .roadmap-body, .roadmap-title {
+    display: none;
+  }
+
+  .small-roadmap-title {
+    font-size: 50px;
+  }
+
+  .small-roadmap-title-row1, .small-roadmap-title-row2 {
+    text-align: center;
+    margin-left: 30%;
+    font-weight: bold;
+    margin-bottom: -10px;
+  }
+
+  .small-roadmap-body {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+  }
+
+  #small-roadmap-headers {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  #small-roadmap-info {
+    color: #ffc107;
+    margin-left: 20px;
+  }
+
+  #vertical-line {
+    display: none;
+  }
+
+  .watch-title {
+    display: none;
+  }
+
+  .small-watch-title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .small-watch-title-row1 {
+    margin-bottom: -10px;
+  }
+
+  .small-img-slide {
+    height: 200px;
+    width: 100px;
+    margin: auto;
+    display: block;
+  }
+
+  .team-title {
+    display: none;
+  }
+  
+  .small-team-title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .team-root {
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+}
+
+/* span.transition-arrow {
+  font-size: 125px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+  
+} */
+
+span.transition-arrow {
+  font-size: 125px;
+  font-weight: bold;
+}
+
+.arrow {
+  text-align: center;
+  width: 100px;
+  transform-origin: center left;
+  transform:rotate(90deg);
+  margin: -50px 50% 50px 50%;
+}
+
 /* Line breaks between sections */
 hr {
-  /* border-top: 0.1px solid #FFDF4F;
-  border-bottom: 0.1px solid #FFDF4F;
-  margin: 15px 65px; */
   border: 0;
   height: .90px;
-  color: #ffc107;
-  /* background-image: linear-gradient(to right, #ffc107, #ffd700); */
-  /* max-width: 80%; */
 }
 
 .hr-text {
@@ -270,56 +630,72 @@ hr {
   outline: 0;
   border: 0;
 }
-/* .hr-text:before {
-    content: ''; */
-    /* // use the linear-gradient for the fading effect
-    // use a solid background color for a solid bar */
-    /* background: linear-gradient(to right, transparent, #ffd700, transparent);
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 2px;
-} */
-/* .hr-text:after {
-    content: attr(data-content);
-    position: relative;
-    display: inline-block;
-    color: #ffd700;
-    padding: 0 .5em;
-    line-height: 1.5em; */
-    /* // this is really the only tricky part, you need to specify the background color of the container element... */
-    /* color: #fff;
-    background-color: #141614;
-} */
 
+/* About & how to win: story.js, AND Roadmap header styling */
 .story-root {
   width: 80%;
   margin: auto;
   text-align: left;
 }
 
-@media screen and (max-width: 800px) {
-  .story-root {
-    font-size: 16px;
-    display: inline-block;
-    text-align: left;
-  }
-
-  #roadmap-size {
-    max-width: 75%;
-    max-height: auto;
-  }
-
-  .team-root {
-    font-size: 16px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-  }
+.story-enter {
+  font-size: 16px;
 }
+
+.about-header, .roadmap-title, .team-title, .watch-title {
+  font-size: 65px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-title-row1 {
+  margin-left: 35%;
+  margin-right: 65%;
+  margin-bottom: -25px;
+}
+
+.about-title-row2 {
+  margin-left: 45%;
+  margin-right: 55%;
+}
+
+.art-sneakpeak {
+  display: block;
+  margin-left: 90px;
+  margin-top: 20px;
+  float: left;
+  width: 25%;
+}
+
+.card-art {
+  display: inline-block;
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: -90px;
+  border: 3px solid black;
+}
+
+.art-img {
+  height: 150;
+  width: 90;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.card-1 {
+  background-color: skyblue;
+}
+
+.card-2 {
+  background: salmon;
+}
+
+.card-3 {
+  background-color: rgb(255, 247, 173);
+}
+
 
 @media screen and (min-width: 415px) {
   .story-root {
@@ -336,32 +712,150 @@ hr {
   }
 }
 
-#roadmap {
-  font-style: italic;
+/* roadmap.js */
+/* #roadmap {
+  
+} */
+
+.roadmap-title-row1 {
+  margin-left: 37.5%;
+  margin-right: 65%;
+  margin-bottom: -30px;
 }
 
-#roadmap-size {
-  width: 50rem;
+.roadmap-title-row2 {
+  margin-left: 47.5%;
+  margin-right: 55%;
 }
 
+#vertical-line {
+  border-left: 6px solid white;
+  height: 630px;
+  float: left;
+  position: absolute;
+  margin-left: 50%;
+}
+
+.roadmap-body {
+  text-align: left;
+  margin-left: 20px;
+}
+
+#roadmap-headers {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#roadmap-info {
+  width: 350px;
+  text-align: inherit;
+  color: #ffc107;
+}
+
+#roadmap-1, #roadmap-3, #roadmap-5, #roadmap-7 {
+  margin-left: 52.5%;
+}
+
+#roadmap-2, #roadmap-4, #roadmap-6 {
+  text-align: right;
+  width: 350px;
+  margin: auto;
+  margin-right: 52.5%;
+}
+
+#roadmap-7 {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 800px) {
+  .small-roadmap-body, .small-roadmap-title, .small-watch-title, .small-about-header, .small-team-title {
+    display: none;
+  }
+}
+
+/* WATCH INVENTORY PICTURES: watchgallery.js */
+.watch-title-row1 {
+  margin-left: 37.5%;
+  margin-right: 65%;
+  margin-bottom: -30px;
+}
+
+.watch-title-row2 {
+  margin-left: 47.5%;
+  margin-right: 55%;
+}
+
+#watch-body {
+  text-align: center;
+}
+
+.img-slide {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 200px;
+}
+
+.carousel-caption {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* TEAM CARDS: team.js */
 .team-root {
   display: block;
   text-align: center;
-}
-
-h3 {
-  text-align: center;
-  font-style: italic;
-  text-decoration: underline;
+  width: 80%;
+  margin: auto;
 }
 
 .team-header {
   text-align: center;
 }
 
+.team-title-row1 {
+  margin-left: 40%;
+  margin-right: 65%;
+  margin-bottom: -30px;
+}
+
+.team-title-row2 {
+  margin-left: 47.5%;
+  margin-right: 52.5%;
+}
+
+.team-cards {
+  background-color: #1d1d1d !important;
+  width: 300px;
+  height: 300px;
+  margin: 0 5px;
+  display: block;
+}
+
+.card-imgs {
+  width: 128px;
+  height: 128px;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
+#team-socials {
+  width: 36px;
+  height: 36px;
+  margin: auto;
+  margin-top: 20px;
+}
+
 .team-members {
   display: inline-block;
   padding: 10px 20px;
+  margin-top: -5px;
+}
+
+#team-name {
+  font-weight: bold;
+  color: #fc3637;
 }
 
 .page-end {
