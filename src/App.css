@@ -797,8 +797,17 @@ hr {
 }
 
 .carousel-caption {
-  margin-top: 20px;
   font-weight: bold;
+  margin-bottom: -25px;
+}
+
+#img-text {
+  margin-bottom: 5px;
+}
+
+#ap-watches {
+  width: 347.5px !important;
+  height: 463px;
 }
 
 /* TEAM CARDS: team.js */
@@ -824,10 +833,14 @@ hr {
   margin-right: 52.5%;
 }
 
+.card-group {
+  height: 315px;
+}
+
 .team-cards {
   background-color: #1d1d1d !important;
-  width: 300px;
-  height: 300px;
+  width: 80%;
+  height: 315px;
   margin: 0 5px;
   display: block;
 }

@@ -73,7 +73,7 @@ export default class Team extends React.Component {
                             <Card.Text>
                                 <div className="team-members">
                                     <div id="team-name">Kevin Rodriguez</div>
-                                    <div id="team-role">Co-Founder & Marketing</div>
+                                    <div id="team-role">Co-Founder</div>
                                     <div id="team-socials">
                                         <a href="https://twitter.com/kevinga_14" target="_blank" rel="noreferrer">
                                             <img src={twitter} alt="Twitter"/>
@@ -89,7 +89,7 @@ export default class Team extends React.Component {
                             <Card.Text>
                                 <div className="team-members">
                                     <div id="team-name">Jeicarlo Ruiz</div>
-                                    <div id="team-role">Co-Founder & Marketing</div>
+                                    <div id="team-role">Co-Founder</div>
                                     <div id="team-socials">
                                         <a href="https://twitter.com/Jeicarlo" target="_blank" rel="noreferrer">
                                             <img src={twitter} alt="Twitter"/>
