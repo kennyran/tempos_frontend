@@ -56,7 +56,12 @@ section {
   }
 
   .navbar {
-    display: none;
+    width: 100%;
+    margin-right: 20%;
+  }
+
+  .navbar-collapse {
+    margin-right: 25%;
   }
 
   .title {
@@ -84,6 +89,7 @@ section {
   .learn-btn {
     margin: auto;
     text-align: center;
+    margin-left: 10%;
   }
 
   .linktree {
@@ -144,64 +150,16 @@ section {
 	transform:scale(1.06);
 }
 
-/* #nav-title {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  margin: auto;
-  font-size: 40px;
-  font-style: italic;
-} */
-
 .nav-mint-btn {
   width: 130px;
 }
-
-/* .wallet-button .connect-wallet {
-	font-family: sans-serif;
-  text-align: center;
-  line-height: 50px;;
-	border: 1.5px solid #ffc107;
-	border-radius: 4rem;
-  overflow: hidden;
-  outline: none;
-  color: #fff;
-  background: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transition: all .5s ease;
-  margin-right: 20px;
-}
-
-.connect-wallet:hover {
-  background: #ffc107;
-  color: #141614;
-}
-
-.wallet-root {
-  display: block;
-  font-family: sans-serif;
-  text-align: center;
-  line-height: 50px;;
-	border: 1.5px solid #ffc107;
-  margin: auto;
-  width: 22rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
-	border-radius: 4rem;
-  overflow: hidden;
-  outline: none;
-  color: #fff;
-  background: none;
-  transition: all .5s ease;
-} */
 
 /* Title and main section: mint.js */
 #mint {
   width: 80%;
   margin: auto;
 }
+
 .title-root {
   display: block;
   float: left;
@@ -230,6 +188,10 @@ section {
   width: 20px;
   margin-left: 45px;
   padding-left: 10px;
+}
+
+.title-text {
+  font-weight: 600;
 }
 
 .learn-btn {
@@ -288,6 +250,7 @@ section {
   border: none !important;
   border-radius: 1px;
   font-size: 16px;
+  font-weight: bold;
   width: 140px;
   height: 40px;
 }
@@ -330,8 +293,10 @@ section {
   border: none !important;
   border-radius: 1px;
   font-size: 16px;
+  font-weight: bold;
   width: 140px;
   height: 40px;
+  color: black !important;
 }
 
 .card-text {
@@ -379,7 +344,7 @@ input::-webkit-inner-spin-button {
 /* Global button styles across all components */
 
 .btn {
-  color: white !important;
+  color: white;
   background: none;
   border: 1.5px solid #fff;
   border-radius: 1px;
@@ -398,6 +363,7 @@ input::-webkit-inner-spin-button {
 .btn:focus {
   background: none;
   border: 1.5px solid #fff;
+  color: white;
 }
 
 .legendary-watches {
@@ -424,6 +390,7 @@ input::-webkit-inner-spin-button {
 
   .title-text {
     font-size: 16px;
+    font-weight: 600;
   }
 
   #mint {
@@ -539,11 +506,12 @@ input::-webkit-inner-spin-button {
   #small-roadmap-headers {
     font-size: 16px;
     font-weight: bold;
+    color: #ffc107;
   }
 
   #small-roadmap-info {
-    color: #ffc107;
     margin-left: 20px;
+    font-weight: 550;
   }
 
   #vertical-line {
@@ -583,23 +551,15 @@ input::-webkit-inner-spin-button {
     font-size: 16px;
     text-align: center;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+    margin: auto;
+    width: 80%;
+  }
+
+  .card-group {
+    width: 100%;
+    margin-left: 7.5%;
   }
 }
-
-/* span.transition-arrow {
-  font-size: 125px;
-  font-weight: bold;
-  width: 100px;
-  height: 100px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: orange;
-  
-} */
 
 span.transition-arrow {
   font-size: 125px;
@@ -640,6 +600,7 @@ hr {
 
 .story-enter {
   font-size: 16px;
+  font-weight: 600;
 }
 
 .about-header, .roadmap-title, .team-title, .watch-title {
@@ -744,12 +705,14 @@ hr {
 #roadmap-headers {
   font-weight: bold;
   font-size: 18px;
+  color:#ffc107;
 }
 
 #roadmap-info {
   width: 350px;
   text-align: inherit;
-  color: #ffc107;
+  font-weight: 600;
+  /* color: #ffc107; */
 }
 
 #roadmap-1, #roadmap-3, #roadmap-5, #roadmap-7 {
@@ -794,6 +757,7 @@ hr {
   margin: auto;
   border-radius: 50%;
   width: 200px;
+  margin-bottom: 50px;
 }
 
 .carousel-caption {
@@ -808,6 +772,7 @@ hr {
 #ap-watches {
   width: 347.5px !important;
   height: 463px;
+  margin-bottom: 100px;
 }
 
 /* TEAM CARDS: team.js */

@@ -51,7 +51,6 @@ class App extends React.Component {
         <header className="header">
           <TemposNav />
             <div className="small-title" id="sm-nav-title">
-                <img alt="logo" src={logo} width="72" height="72" className="title d-inline-block align-top"/>
                   <div>Tempos</div>
             </div>
         </header>
