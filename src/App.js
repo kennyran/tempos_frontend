@@ -2,14 +2,11 @@ import './App.css';
 import React from 'react';
 
 // ======// Component imports //======
-//import web3 from './components/web3'
-import Modal from './components/walletmodal';
 import Team from './components/team';
 import Mint from './components/mint'
 import Story from './components/story'
 import Roadmap from './components/roadmap'
 import WatchGallery from './components/watchgallery';
-//import WalletButton from './components/connectwallet';
 import TemposNav from './components/navbar'
 import Artist from './components/artists';
 
@@ -20,27 +17,6 @@ import Artist from './components/artists';
 // import Container from 'react-bootstrap/Container'
 
 class App extends React.Component {
-  state = {
-    show: false,
-  }
-
-  modalPopUp = e => {
-    this.setState({
-      show: !this.state.show
-    })
-  }
-
-  handleShow = () => {
-    this.setState({
-      show: true
-    })
-  }
-
-  handleClose = () => {
-    this.setState({
-      show: false
-    })
-  }
   
   render() {
   return (
@@ -52,8 +28,6 @@ class App extends React.Component {
                   <div>Tempos</div>
             </div>
         </header>
-
-        <Modal onClose={this.state.modalPopUp} show={this.state.show} />
         <section>
           <Mint />
         </section>
