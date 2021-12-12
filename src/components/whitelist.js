@@ -1,15 +1,39 @@
 import React from 'react'
 import '../App.css'
-import web3 from './web3'
+//import web3 from './web3'
 
 // =====// React Bootstrap Imports //======
 import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal'
+import ModalHeader from 'react-bootstrap/ModalHeader'
+import ModalTitle from 'react-bootstrap/ModalTitle'
+import ModalBody from 'react-bootstrap/ModalBody'
+import ModalFooter from 'react-bootstrap/ModalFooter'
+import Form from 'react-bootstrap/Form'
+import FloatingLabel from 'react-bootstrap/esm/FloatingLabel'
 
 export default class Whitelist extends React.Component {
     state = {
         name: '',
         email: '',
-        walletAddress: ''
+        walletAddress: '',
+        phoneNumber: '',
+        discordName: '',
+        show: false,
+        fields: {},
+        errors: {}
+    }
+
+    handleShow = () => {
+        this.setState({
+          show: true
+        })
+      }
+    
+      handleClose = () => {
+        this.setState({
+          show: false
+        })
     }
 
     changeHandler = (e) => {
@@ -21,39 +45,83 @@ export default class Whitelist extends React.Component {
         console.log(this.state)
     }
 
-    async componentDidMount() {
-        // =====// Fetch walletAddress of current user //======
-        let account = await web3.eth.getAccounts();
-        this.setState({ walletAddress: account})
-        console.log(account)
-    }
-
     render() {
 
         return (
             <div className="whitelist-root">
-                <div id="whitelist">
-                    <div id="whitelist-title">
-                        <h3>Whitelist form</h3>
-                    </div>
-                    <form className="whitelist-form" method="POST" action="https://script.google.com/macros/s/AKfycbx7RIFe4ztEhKMQpdB_tovo_eKdWEfxgj_iQbwNVUTqJU1MvlMIUCROIyBcNxe5WkrJ/exec" onSubmit={this.submitHandler}>
-                        <label>
-                            Name:
-                            <input placeholder="Name" type="text" name="name" value={this.state.name} onChange={this.changeHandler} /> 
-                        </label>
-                        <label>
-                            E-mail address:
-                            <input placeholder="Email" type="text" name="email" value={this.state.email} onChange={this.changeHandler} />
-                        </label>
-                        <label>
-                            Wallet Address:
-                            <input placeholder="Wallet Address" type="text" name="wallet-address" value={this.state.walletAddress} onChange={this.changeHandler} />
-                        </label>
-                        <label>
-                            <Button type="submit">Submit</Button>
-                        </label>
-                    </form>
-                </div>
+
+                <Button variant="light" onClick={this.handleShow}className="whitelist-btn">Whitelist Form</Button>
+
+                <Modal show={this.state.show} onHide={this.handleClose}>
+                    <ModalHeader closeButton>
+                        <ModalTitle>Whitelist Form</ModalTitle>
+                    </ModalHeader>
+                    <ModalBody>
+                        <Form 
+                        method="POST" 
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSefl7TMiQjpxWS1Vwl54OQLlvLx4G-3LWH3En0uIln2jK2-YA/formResponse" target="_blank">
+                            <Form.Group>
+                                <FloatingLabel controlId="floatinginput" label="Name"
+                                className="mb-3">
+                                    <Form.Control type="text" onChange={this.changeHandler} placeholder="Enter Name" name="entry.1456901542"
+                                    required/>
+                                    <Form.Text className="text-muted">
+                                    We'll never share your personal data with anyone else.
+                                    </Form.Text>
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group>
+                                <FloatingLabel controlId="floatinginput" label="E-mail Address (name@example.com)"
+                                className="mb-3">
+                                <Form.Control 
+                                type="text" 
+                                onChange={this.changeHandler} placeholder="name@example.com" name="entry.457389616"
+                                required/>
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group>
+                                <FloatingLabel controlId="floatinginput" label="Ethereum Wallet Address (i.e. 0x0000)"
+                                className="mb-3">
+                                    <Form.Control 
+                                    type="text" 
+                                    onChange={this.changeHandler} placeholder="Wallet Address (i.e. 0x0000)" 
+                                    name="entry.227509160"
+                                    required/>
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group>
+                                <FloatingLabel controlId="floatinginput" label="Phone Number"
+                                className="mb-3">
+                                    <Form.Control 
+                                    type="text" 
+                                    onChange={this.changeHandler} placeholder="Phone Number"
+                                    name="entry.1679963375"
+                                    required/>
+                                    <Form.Text className="text-muted">
+                                    Backup way of contacting giveaway recipient
+                                    </Form.Text>
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group>
+                                <FloatingLabel controlId="floatinginput" label="Discord Username (ex. DiscordUser#0001)"
+                                className="mb-3">
+                                    <Form.Control 
+                                    type="text" 
+                                    onChange={this.changeHandler} placeholder="User Name (i.e. User#0001)"
+                                    name="entry.1131314337" required/>
+                                </FloatingLabel>
+                            </Form.Group>
+                            
+                            <ModalFooter>
+                                <Button className="form-submit"
+                                variant="outline-dark" 
+                                type="submit">
+                                    Submit
+                                </Button>
+                            </ModalFooter>
+                        </Form>
+                    </ModalBody>
+                </Modal>
             </div>
         )
     }

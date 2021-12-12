@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.css'
+import Web3 from 'web3'
 
 // ======// React Bootstrap imports //======
 import Navbar from 'react-bootstrap/Navbar'
@@ -13,10 +14,51 @@ import Community from './community'
 import logo from '../img/tempos_logo.jpeg'
 
 export default class TemposNav extends React.Component {
-
-    notStarted = () => {
-        alert("Minting hasn't started yet!")
+    state ={
+        account: 'Mint Watch'
     }
+
+    async componentDidMount() {
+        await this.loadWeb3()
+        await this.loadBlockchainData()
+    }
+
+    async loadBlockchainData() {
+        const web3 = window.web3
+        
+        const accounts = await web3.eth.getAccounts()
+        this.setState({ account: accounts[0]})
+    }
+
+    loadWeb3 = async () => {
+        if (window.ethereum) {
+          window.web3 = new Web3(window.ethereum)
+          await window.ethereum.request({ method: "eth_requestAccounts" })
+        }
+        else if (window.web3) {
+          window.web3 = new Web3(window.web3.currentProvider)
+        }
+        else {
+          window.alert('Non-Ethereum browser detected. Refresh your page with your browser wallet!')
+        }
+
+        const chainId = await window.ethereum.request({
+            method: 'eth_chainId'
+        })
+
+        const web3 = window.web3
+        
+        const accounts = await web3.eth.getAccounts()
+
+        if (chainId !== '0x1') {
+            alert("Please connect to Mainnet");
+        } else {
+            let wallet = accounts[0]
+            this.setState({
+                account: wallet
+            })
+        }
+      }
 
     render() {
         return(
@@ -46,7 +88,8 @@ export default class TemposNav extends React.Component {
                                     <Nav.Link target="_blank" href={whitepaper}>Whitepaper</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item href="#mint">
-                                    <Button variant="light" className="nav-mint-btn" onClick={this.notStarted}>Mint Watch</Button>
+                                    {/* Check account string and slice it appropriately */}
+                                    <Button variant="light" className="nav-mint-btn" onClick={this.loadWeb3}>{this.state.account && `${this.state.account.slice(0, 6)}...${this.state.account.slice(this.state.account.length - 4, this.state.account.length)}`}</Button>
                                 </Nav.Item>
                             </Nav>
                         </Navbar.Collapse>

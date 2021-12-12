@@ -19,6 +19,7 @@ h3 {
 /* Section view height for each component */
 section {
   min-height: 75vh;
+  display: block;
 }
 
 /* Navbar & Header: Navbar.js */
@@ -119,9 +120,13 @@ section {
 /* Social Icons in top right of page: Community.js */
 .img-color {
   color: white;
-  filter: brightness(0) invert(1);
   height: 24px;
   width: 24px;
+}
+
+.medium {
+  width: 30px;
+  height: 30px;
 }
 
 .community-icons-root {
@@ -139,7 +144,6 @@ section {
 .community-icons {
   display: inline-block;
   margin: 0 5px;
-  color: white !important;
 }
 
 .community-icons:hover {
@@ -152,6 +156,10 @@ section {
 
 .nav-mint-btn {
   width: 130px;
+}
+
+.nav-mint-btn:hover {
+  color: white;
 }
 
 /* Title and main section: mint.js */
@@ -192,15 +200,128 @@ section {
 
 .title-text {
   font-weight: 600;
+  width: 100%;
 }
 
+.gif-countdown {
+  display: block;
+  background-color: #1d1d1d;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.countdown, .gif {
+  display: inline-block;
+}
+
+.countdown-card {
+  display: inline-block;
+  background-color: #1d1d1d;
+  margin-left: 5%;
+  margin: auto;
+  width: 290px;
+  height: 150px;
+  text-align: center;
+}
+
+#countdown-title {
+  text-decoration: underline;
+}
+
+#countdown {
+  font-size: 18px;
+}
+
+.countdown {
+  font-weight: bold;
+  margin-left: 30%;
+}
+
+/* Coming soon animation DELETE AFTER COUNTDOWN IS ADDED */
+
+.dot {
+  margin-left: 3px;
+}
+
+.dot1 {
+  animation: visibility 2.5s linear infinite;
+ }
+ 
+ @keyframes visibility {
+  0% {
+  opacity: 1;
+  }
+  65% {
+  opacity: 1;
+  }
+  66% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 0;
+  }
+ }
+ 
+ .dot2 {
+  animation: visibility2 2.5s linear infinite;
+ }
+ 
+ @keyframes visibility2 {
+  0% {
+   opacity: 0;
+  }
+  21% {
+   opacity: 0;
+  }
+  22% {
+   opacity: 1;
+  }
+  65% {
+   opacity: 1;
+  }
+  66% {
+   opacity: 0;
+  }
+  100% {
+   opacity: 0;
+  }
+ }
+ 
+ .dot3 {
+  animation: visibility3 2.5s linear infinite;
+ }
+ 
+ @keyframes visibility3 {
+  0% {
+   opacity: 0;
+  }
+  43% {
+   opacity: 0;
+  }
+  44% {
+   opacity: 1;
+  }
+  65% {
+   opacity: 1;
+  }
+  66% {
+   opacity: 0;
+  }
+  100% {
+   opacity: 0;
+  }
+ }
+
 .learn-btn {
-  margin-top: 75px;
+  margin-top: 25px;
+  text-align: center;
+  margin-left: 30%;
 }
 
 .linktree {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .linktree:hover {
@@ -253,6 +374,10 @@ section {
   font-weight: bold;
   width: 140px;
   height: 40px;
+}
+
+.normal-mint-btn:hover {
+  color: white;
 }
 
 .mint-card-img {
@@ -371,8 +496,59 @@ input::-webkit-inner-spin-button {
   padding: 5px 45px;
 }
 
+.whitelist-btn {
+  font-weight: 550;
+}
+
+.whitelist-btn:hover {
+  color: white;
+}
+
+.modal {
+  color: black;
+}
+
+.form-submit {
+  background-color: #1d1d1d;
+  border-radius: 5px;
+}
+
+.form-submit:hover {
+  background-color: #1d1d1d;
+}
+
+@media screen and (max-width: 1324px) {
+  #mint {
+    display: flex;
+  }
+
+  .title-root, .gif-countdown {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 60px;
+    margin-bottom: 15px;
+  }
+
+  .gif-countdown {
+    display: block;
+    width: 75%;
+    text-align: center;
+  }
+  
+  .gif, .countdown-card {
+    display: inline-block;
+  }
+
+  .countdown, .learn-btn {
+    margin: auto;
+  }
+  
+}
+
 /* Media query for screens up to 800px (iPads) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 809px) {
   .App {
     display: block;
     float: none;
@@ -404,7 +580,7 @@ input::-webkit-inner-spin-button {
     display: none;
   }
 
-  .mint-cards {
+  .mint-cards, .gif-countdown {
     width: 80%;
     display: inline-block;
     text-align: center;
@@ -414,6 +590,35 @@ input::-webkit-inner-spin-button {
     width: 250px;
     height: 225px;
     text-align: center;
+  }
+
+  .gif-countdown {
+    width: 250px;
+    height: 400px;
+    margin: auto;
+    margin-left: 4%;
+    font-size: 16px;
+  }
+
+  .gif {
+    margin-top: 10px;
+  }
+
+  .countdown-card {
+    margin: 0 auto;
+    margin-left: -5%;
+  }
+
+  .countdown {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    margin-left: 7.5%;
+  }
+
+  .learn-btn {
+    margin-left: -5%;
   }
 
   .card-text-row1, .card-text-row2, .card-text-row3, .leg-text-row1, .leg-text-row2, .leg-text-row3 {
@@ -440,12 +645,6 @@ input::-webkit-inner-spin-button {
     width: 80%;
   }
 
-  /* .about-header {
-    text-align: center;
-    display: block;
-    font-size: 18px;
-  } */
-
   #headers {
     width: 80%;
     text-align: center;
@@ -466,14 +665,24 @@ input::-webkit-inner-spin-button {
     margin-bottom: -10px;
   }
 
-  /* .about-title-row1, .about-title-row2 {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  } */
 
   #art-cards {
     display: none;
+  }
+
+  .artist-title-row1, .artist-title-row2, .artist-info-block {
+    display: none;
+  } 
+
+  .small-artist-header {
+    font-weight: 550;
+    font-size: 25px;
+    margin: auto;
+  }
+  
+  .small-artist-info-block {
+    font-weight: 550;
+    width: 100%;
   }
 
   #roadmap {
@@ -510,7 +719,8 @@ input::-webkit-inner-spin-button {
   }
 
   #small-roadmap-info {
-    margin-left: 20px;
+    margin-left: 15%;
+    width: 100%;
     font-weight: 550;
   }
 
@@ -559,6 +769,34 @@ input::-webkit-inner-spin-button {
     width: 100%;
     margin-left: 7.5%;
   }
+
+  .team-cards {
+    width: 100%;
+    margin: auto;
+  }
+
+  .team-cards-row1, .team-cards-row2 {
+    display: inline-block;
+  }
+
+  .team-cards-row2 {
+    width: 80% !important;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  section {
+    min-height: 60vh;
+    display: block;
+  }
+
+  .gif-countdown {
+    margin-top: 6%;
+  }
+
+  .countdown-card {
+    width: 50%;
+  }
 }
 
 span.transition-arrow {
@@ -572,6 +810,7 @@ span.transition-arrow {
   transform-origin: center left;
   transform:rotate(90deg);
   margin: -50px 50% 50px 50%;
+  margin-top: 10px;
 }
 
 /* Line breaks between sections */
@@ -603,7 +842,7 @@ hr {
   font-weight: 600;
 }
 
-.about-header, .roadmap-title, .team-title, .watch-title {
+.about-header, .roadmap-title, .team-title, .watch-title, .sub-heading {
   font-size: 65px;
   font-weight: bold;
   text-align: center;
@@ -655,6 +894,30 @@ hr {
 
 .card-3 {
   background-color: rgb(255, 247, 173);
+}
+
+/* Empowering Young Local Artists: artist.js */
+.artist-root {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+.artist-title-row1 {
+  margin-right: 15%;
+}
+
+.artist-title-row2 {
+  margin-left: 30%;
+}
+
+.artist-info-block {
+  font-weight: 550;
+  width: 60%;
+  margin: 0 20%;
+}
+
+.artist-info {
+  margin-bottom: 10px;
 }
 
 
@@ -731,7 +994,7 @@ hr {
 }
 
 @media screen and (min-width: 800px) {
-  .small-roadmap-body, .small-roadmap-title, .small-watch-title, .small-about-header, .small-team-title {
+  .small-roadmap-body, .small-roadmap-title, .small-watch-title, .small-about-header, .small-team-title, .small-artist-header, .small-artist-info-block {
     display: none;
   }
 }
@@ -772,7 +1035,7 @@ hr {
 #ap-watches {
   width: 347.5px !important;
   height: 463px;
-  margin-bottom: 100px;
+  margin-bottom: 142px;
 }
 
 /* TEAM CARDS: team.js */
@@ -802,12 +1065,27 @@ hr {
   height: 315px;
 }
 
+.card-group {
+  margin-bottom: 10px;
+}
+
 .team-cards {
   background-color: #1d1d1d !important;
   width: 80%;
   height: 315px;
   margin: 0 5px;
   display: block;
+}
+
+.team-cards-row1 {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.team-cards-row2 {
+  width: 60%;
+  margin: auto;
 }
 
 .card-imgs {
@@ -834,9 +1112,4 @@ hr {
 #team-name {
   font-weight: bold;
   color: #fc3637;
-}
-
-.page-end {
-  margin-bottom: 15px;
-  margin-top: 15px;
 }

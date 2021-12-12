@@ -1,19 +1,17 @@
 import './App.css';
 import React from 'react';
+
 // ======// Component imports //======
 //import web3 from './components/web3'
 import Modal from './components/walletmodal';
 import Team from './components/team';
-//import Community from './components/community';
 import Mint from './components/mint'
 import Story from './components/story'
 import Roadmap from './components/roadmap'
 import WatchGallery from './components/watchgallery';
-//import whitepaper from './whitepaper/Tempos_Whitepaper.pdf'
-import logo from './img/tempos_logo.jpeg'
-//import Whitelist from './components/whitelist';
 //import WalletButton from './components/connectwallet';
 import TemposNav from './components/navbar'
+import Artist from './components/artists';
 
 // ======// React Bootstrap imports //======
 
@@ -61,13 +59,16 @@ class App extends React.Component {
         </section>
       </div>
       <section>
+        <WatchGallery />
+      </section>
+      <section>
         <Story />
       </section>
       <section>
-        <Roadmap />
+        <Artist/>
       </section>
       <section>
-        <WatchGallery />
+        <Roadmap />
       </section>
       <section>
       <Team />

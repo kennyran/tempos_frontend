@@ -7,7 +7,8 @@ export default class WalletButton extends React.Component {
         wallet: 'Connect Wallet'
     }
 
-    walletAddress = async () => {
+    walletAddress = async (e) => {
+        e.preventDefault()
         let showAddress = await web3.eth.getAccounts();
     
         this.setState({

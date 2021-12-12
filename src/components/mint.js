@@ -4,10 +4,18 @@ import Button from 'react-bootstrap/Button'
 // import web3 from './web3';
 import tuxwalking from '../characters/Tux-walking.png'
 import mig from '../characters/mig-transp.png'
+import gif from '../img/gif/tempos_sneakpeak.gif'
+//import Countdown from './countdownTimer';
+import Whitelist from './whitelist';
 
 export default class Mint extends React.Component {
 
+    notStarted = () => {
+        alert("Minting hasn't started yet!")
+    }
+
     render() {
+
         return(
             <div id="mint">
                 <div className="title-root">
@@ -20,10 +28,28 @@ export default class Mint extends React.Component {
                         </div>
                     </div>
                     <div className="title-text">
-                        <p>TEMPOS is a community based NFT project that utilizes the technology of NFT's to disrupt markets that are traditionally difficult to get into. We are the first watch project merging the digital world of NFT's and the physical world of high end watches.</p>
+                        <p>TEMPOS is collection of 3,000 NFTs that bridges high end watches in the physical and digital world. We are a community based project that utilizes the technology of NFTs to disrupt markets that are traditionally difficult to get into.</p>
                     </div>
-                    <div className="learn-btn">
-                        <Button variant="light"><a href="https://linktr.ee/TemposNFT" target="_blank" rel="noreferrer" className="linktree">Learn More</a></Button>
+                    <div className="gif-countdown">
+                        <div className="gif">
+                            <img src={gif} alt="sneakpeak gif" height="225" width="225"/>
+                        </div>
+                        <div className="countdown-card">
+                            <div className="countdown">
+                                {/* <Countdown/> */}
+                                COUNTDOWN TO MINT:
+                                <p>
+                                    Coming soon<span className="dot dot1">.</span><span className="dot dot2">.</span><span className="dot dot3">.</span>
+                                </p>
+                            </div>
+                            <div className="learn-btn">
+                                {/* <Button variant="light">
+                                    <a href="https://linktr.ee/TemposNFT" target="_blank" rel="noreferrer" className="linktree">Learn More
+                                    </a>
+                                </Button> */}
+                                <Whitelist/>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -52,7 +78,8 @@ export default class Mint extends React.Component {
                                     <input type="number" min="1" max="10" className="mint-amount-input" placeholder="AMOUNT TO MINT"/>
                                 </div>
 
-                                <Button className="normal-mint-btn" variant="light">Mint</Button>
+                                <Button className="normal-mint-btn" variant="light"
+                                onClick={this.notStarted}>Mint</Button>
                             </Card.Body>
                         </Card>
                     </div>
@@ -77,7 +104,8 @@ export default class Mint extends React.Component {
                                     </div>
                                 </Card.Text>
 
-                                <Button className="leg-mint-btn" variant="light">Mint</Button>
+                                <Button className="leg-mint-btn" variant="light"
+                                onClick={this.notStarted}>Mint</Button>
                             </Card.Body>
                         </Card>
                     </div>

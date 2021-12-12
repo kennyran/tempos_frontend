@@ -8,6 +8,8 @@ import kevin from '../img/avatars/kevin-pfp.png'
 import miguel from '../img/avatars/miguel-pfp.png'
 import kiana from '../img/avatars/kiana-pfp.png'
 import jan from '../img/avatars/jan-pfp.png'
+import john from '../img/avatars/jose-pfp.png'
+import jorge from '../img/avatars/mod-2-pfp.png'
 
 // ======// Image imports //======
 import twitter from '../img/twitter-white.svg'
@@ -34,7 +36,29 @@ export default class Team extends React.Component {
                         <div className="small-team-title-row2">TEAM</div>
                     </div>
                 </div>
-                    <CardGroup>
+                    <CardGroup className="team-cards-row1">
+                    <Card className="team-cards">
+                        <Card.Img className="card-imgs" id="spence" src={john} variant="top" />
+                        <Card.Body>
+                            <Card.Text>
+                                <div className="team-members">
+                                    <div id="team-name">John Velas</div>
+                                    <div id="team-role">Investment Advisor</div>
+                                </div>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="team-cards">
+                        <Card.Img className="card-imgs" src={jorge} variant="top" />
+                        <Card.Body>
+                            <Card.Text>
+                            <div className="team-members">
+                                <div id="team-name">Jorge Viera</div>
+                                <div id="team-role">Creative Director</div>
+                            </div>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
                     <Card className="team-cards">
                         <Card.Img className="card-imgs" id="spence" src={spencer} variant="top" />
                         <Card.Body>
@@ -43,7 +67,7 @@ export default class Team extends React.Component {
                                     <div id="team-name">Whitekicks</div>
                                     <div id="team-role">Crypto Market Advisor</div>
                                     <div id="team-socials">
-                                        <a href="https://twitter.com/kevinga_14" target="_blank" rel="noreferrer">
+                                        <a href="https://twitter.com/kickswhite" target="_blank" rel="noreferrer">
                                             <img src={twitter} alt="Twitter"/>
                                         </a>
                                     </div>
@@ -83,6 +107,8 @@ export default class Team extends React.Component {
                             </Card.Text>
                             </Card.Body>
                     </Card>
+                    </CardGroup>
+                    <CardGroup className="team-cards-row2">
                     <Card className="team-cards">
                         <Card.Img className="card-imgs" src={jeicarlo} variant="top" />
                         <Card.Body>
@@ -105,7 +131,7 @@ export default class Team extends React.Component {
                         <Card.Text>
                             <div className="team-members">
                                 <div id="team-name">Kennyran.eth</div>
-                                <div id="team-role">Blockchain & Web developer</div>
+                                <div id="team-role">Developer</div>
                                 <div id="team-socials">
                                     <a href="https://www.twitter.com/kenny_rancour" target="_blank" rel="noreferrer">
                                         <img src={twitter} alt="Twitter"/>

@@ -15,9 +15,6 @@ export default class Story extends React.Component {
     render() {
         return(
             <div className="story-root" id="about">
-                <div className="arrow">
-                    <span className="transition-arrow">&#187;</span>
-                </div>
                 <div className="about-header" id="headers">
                     <div className="about-title-row1">ABOUT</div>
                     <div className="about-title-row2">TEMPOS</div>

@@ -11,7 +11,7 @@ import subDate from '../img/watches/submariner-date.png'
 import subKermit from '../img/watches/submariner-kermit.png'
 import skydweller from '../img/watches/skydweller.png'
 import daytonaPanda from '../img/watches/daytona-panda.png'
-import daytonaEverose from '../img/watches/daytona-everose.png'
+import daytonaEverose from '../img/watches/daytona-rose-chocolate-dial.png'
 import ap15500 from '../img/watches/ap-15500.png'
 import apChrono from '../img/watches/ap-chrono-white.png'
 
@@ -21,7 +21,10 @@ export default class WatchGallery extends React.Component {
         return(
             <div id="watch-inventory">
                 <div id="watch-header">
-                    <div className="watch-title">
+                    <div className="arrow">
+                        <span className="transition-arrow">&#187;</span>
+                    </div>
+                    <div className="watch-title sub-heading">
                         <div className="watch-title-row1">WATCH</div>
                         <div className="watch-title-row2">INVENTORY</div>
                     </div>
@@ -103,7 +106,7 @@ export default class WatchGallery extends React.Component {
                             <img className="d-block w-50 img-slide" id="small-img" src={daytonaPanda} alt="8th slide"/>
                             <Carousel.Caption>
                                 <div id="img-text">
-                                    Rolex Cosmograph Daytona Panda Oyster-Flex
+                                    Rolex Cosmograph Daytona White Gold Silver Dial Panda
                                 </div>
                                 <p>AMOUNT: 1</p>
                             </Carousel.Caption>
@@ -112,7 +115,7 @@ export default class WatchGallery extends React.Component {
                             <img className="d-block w-50 img-slide" id="small-img" src={daytonaEverose} alt="9th slide"/>
                             <Carousel.Caption>
                                 <div id="img-text">
-                                    Rolex Cosmograph Dayton Everose Gold Oyster
+                                    Rolex Cosmograph Daytona Full Rose Gold Chocolate Dial
                                 </div>
                                 <p>AMOUNT: 1</p>
                             </Carousel.Caption>
@@ -121,7 +124,7 @@ export default class WatchGallery extends React.Component {
                             <img className="d-block w-50 img-slide" id="ap-watches" src={ap15500} alt="10th slide"/>
                             <Carousel.Caption>
                                 <div id="img-text">
-                                    AP 15500 Black Dial
+                                    AP Royal Oak 15500 Black Dial
                                 </div>
                                 <p>AMOUNT: 1</p>
                             </Carousel.Caption>
@@ -130,7 +133,7 @@ export default class WatchGallery extends React.Component {
                             <img className="d-block w-50 img-slide" id="ap-watches" src={apChrono} alt="11th slide"/>
                             <Carousel.Caption>
                                 <div id="img-text">
-                                    AP Chrono White Dial
+                                    AP Chrono Panda
                                 </div>
                                 <p>AMOUNT: 1</p>
                             </Carousel.Caption>

@@ -7,7 +7,7 @@ export default class Roadmap extends React.Component {
         return(
             <div id="roadmap">
 
-                <div className="roadmap-title">
+                <div className="roadmap-title sub-heading">
                     <div className="roadmap-title-row1">ROAD</div>
                     <div className="roadmap-title-row2">MAP</div>
                 </div>

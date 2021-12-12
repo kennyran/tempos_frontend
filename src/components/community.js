@@ -2,7 +2,7 @@ import React from 'react';
 import discord from '../img/Discord-Logo-White.svg'
 import twitter from '../img/twitter-white.svg'
 import opensea from '../img/opensea-logo.svg'
-import medium from '../img/medium.png'
+import medium from '../img/medium-logo.png'
 import '../App.css';
 
 export default class Community extends React.Component {
@@ -27,7 +27,7 @@ export default class Community extends React.Component {
                     </div>
                     <div className="community-icons">
                         <a target="_blank" rel="noreferrer noopener" id="social-links" href="https://medium.com/@temposnft">
-                            <img src={medium} alt="medium logo" className="img-color"/></a>
+                            <img src={medium} alt="medium logo" className="medium img-color"/></a>
                     </div>
                 </div>
             </div>
