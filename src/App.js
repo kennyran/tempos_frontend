@@ -47,6 +47,10 @@ class App extends React.Component {
       <section>
       <Team />
       </section>
+
+      <div className="page-end">
+
+      </div>
     </div>
   );
 }

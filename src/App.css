@@ -1019,8 +1019,10 @@ hr {
   display: block;
   margin: auto;
   border-radius: 50%;
-  width: 200px;
-  margin-bottom: 50px;
+  width: 350px;
+  height: 450px;
+  margin-bottom: 100px;
+  object-fit: scale-down;
 }
 
 .carousel-caption {
@@ -1030,12 +1032,6 @@ hr {
 
 #img-text {
   margin-bottom: 5px;
-}
-
-#ap-watches {
-  width: 347.5px !important;
-  height: 463px;
-  margin-bottom: 142px;
 }
 
 /* TEAM CARDS: team.js */
@@ -1112,4 +1108,9 @@ hr {
 #team-name {
   font-weight: bold;
   color: #fc3637;
+}
+
+.page-end {
+  margin: 10px;
+  background-color: #000000;
 }
