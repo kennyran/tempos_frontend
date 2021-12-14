@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-// import web3 from './web3';
 import tuxwalking from '../characters/Tux-walking.png'
 import mig from '../characters/mig-transp.png'
 import gif from '../img/gif/tempos_sneakpeak.gif'
@@ -28,7 +27,7 @@ export default class Mint extends React.Component {
                         </div>
                     </div>
                     <div className="title-text">
-                        <p>TEMPOS is collection of 3,000 NFTs that bridges high end watches in the physical and digital world. We are a community based project that utilizes the technology of NFTs to disrupt markets that are traditionally difficult to get into.</p>
+                        <p>TEMPOS is collection of 3,000 NFTs that bridges high end watches of the physical with the digital world. We are a community based project that utilizes the technology of NFTs to disrupt markets that are traditionally difficult to get into.</p>
                     </div>
                     <div className="gif-countdown">
                         <div className="gif">
@@ -43,10 +42,6 @@ export default class Mint extends React.Component {
                                 </p>
                             </div>
                             <div className="learn-btn">
-                                {/* <Button variant="light">
-                                    <a href="https://linktr.ee/TemposNFT" target="_blank" rel="noreferrer" className="linktree">Learn More
-                                    </a>
-                                </Button> */}
                                 <Whitelist/>
                             </div>
                         </div>

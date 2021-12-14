@@ -1,12 +1,10 @@
 import React from 'react'
 import '../App.css'
-import Web3 from 'web3'
 
 // ======// React Bootstrap imports //======
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/esm/Container'
-import Button from 'react-bootstrap/Button'
 
 // ======// Local Imports //======
 import whitepaper from '../whitepaper/Tempos_Whitepaper.pdf'
@@ -29,13 +27,13 @@ export default class TemposNav extends React.Component {
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="justify-content-end">
                                 <Nav.Item>
+                                    <Nav.Link href="#watch-inventory">Watch Inventory</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
                                     <Nav.Link href="#about">About Us</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link href="#roadmap">Road Map</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link href="#watch-inventory">Watch Inventory</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link href="#team">Our Team</Nav.Link>
@@ -44,9 +42,6 @@ export default class TemposNav extends React.Component {
                                     <Nav.Link target="_blank" href={whitepaper}>Whitepaper</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item href="#mint">
-                                    {/* Check account string and slice it appropriately */}
-                                    {/* <Button variant="light" className="nav-mint-btn" 
-                                    onClick={this.loadWeb3}>{this.state.account && `${this.state.account.slice(0, 6)}...${this.state.account.slice(this.state.account.length - 4, this.state.account.length)}`}</Button> */}
                                     <ConnectButton/>
                                 </Nav.Item>
                             </Nav>

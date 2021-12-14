@@ -1,6 +1,5 @@
 import React from 'react'
 import '../App.css'
-//import web3 from './web3'
 
 // =====// React Bootstrap Imports //======
 import Button from 'react-bootstrap/Button'

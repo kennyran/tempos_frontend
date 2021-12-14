@@ -1,9 +1,7 @@
 import React from 'react';
 import '../App.css'
 // =====// Component imports //=====
-//import tuxwalking from '../characters/Tux-walking.png'
 import walking from '../characters/Hoodie-walking.png'
-//import hoodie from '../characters/hoodie-sitting.png'
 import kev from '../characters/kevin-transp.png'
 import spence from '../characters/spencer-transp.png'
 
