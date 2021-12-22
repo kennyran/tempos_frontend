@@ -108,7 +108,7 @@ export default class Team extends React.Component {
                             </Card.Body>
                     </Card>
                     </CardGroup>
-                    <CardGroup className="team-cards-row2">
+                    <CardGroup className="team-cards-row2 row2">
                     <Card className="team-cards">
                         <Card.Img className="card-imgs" src={jeicarlo} variant="top" />
                         <Card.Body>
@@ -165,10 +165,10 @@ export default class Team extends React.Component {
                                 <div id="team-name">Kiana Diaz</div>
                                 <div id="team-role">Artist</div>
                                 <div id="team-socials">
-                                        <a href="https://twitter.com/kianadiazz" target="_blank" rel="noreferrer">
-                                            <img src={twitter} alt="Twitter"/>
-                                        </a>
-                                    </div>
+                                    <a href="https://twitter.com/kianadiazz" target="_blank" rel="noreferrer">
+                                        <img src={twitter} alt="Twitter"/>
+                                    </a>
+                                </div>
                             </div>
                             </Card.Text>
                         </Card.Body>

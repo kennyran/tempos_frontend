@@ -136,10 +136,6 @@ section {
   margin-bottom: -12.5px;
   padding-top: 5px;
 }
-.community-icons-row {
-  display: block;
-  font-size: 1em;
-}
 
 .community-icons {
   display: inline-block;
@@ -152,10 +148,6 @@ section {
 	-ms-transform:scale(1.06); /* IE 9 */
 	-o-transform:scale(1.06); /* Opera */
 	transform:scale(1.06);
-}
-
-.nav-mint-btn {
-  width: 130px;
 }
 
 .nav-mint-btn:hover {
@@ -174,10 +166,6 @@ section {
   text-align: left;
   width: 50%;
   margin-left: 20px;
-}
-
-.title-block {
-  display: block;
 }
 
 .title {
@@ -207,11 +195,7 @@ section {
   display: block;
   background-color: #1d1d1d;
   border-radius: 5px;
-  overflow: hidden;
-}
-
-.countdown, .gif {
-  display: inline-block;
+  text-align: center;
 }
 
 .countdown-card {
@@ -219,7 +203,6 @@ section {
   background-color: #1d1d1d;
   margin-left: 5%;
   margin: auto;
-  width: 290px;
   height: 150px;
   text-align: center;
 }
@@ -228,13 +211,9 @@ section {
   text-decoration: underline;
 }
 
-#countdown {
-  font-size: 18px;
-}
-
 .countdown {
   font-weight: bold;
-  margin-left: 30%;
+  margin: auto;
 }
 
 /* Coming soon animation DELETE AFTER COUNTDOWN IS ADDED */
@@ -315,25 +294,13 @@ section {
 .learn-btn {
   margin-top: 25px;
   text-align: center;
-  margin-left: 30%;
-}
-
-.linktree {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.linktree:hover {
-  color: white;
 }
 
 /* Minting Cards: mint.js */
 .mint-cards {
   display: block;
-  justify-content: center;
   margin: 0 30px 30px 30px;
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
   min-height: 20rem;
   float: right;
 }
@@ -351,8 +318,6 @@ section {
 
 .card-text-row1, .card-text-row2, .card-text-row3, .input {
   text-align: left;
-  display: block;
-  font-family: 'Montserrat', sans-serif;
   margin-top: -3px;
 }
 
@@ -387,7 +352,6 @@ section {
 }
 
 .legendary-mint {
-  display: inline-block;
   width: 450px;
   height: 225px;
   background-color: #1d1d1d;
@@ -398,8 +362,6 @@ section {
 
 .leg-text-row1, .leg-text-row2, .leg-text-row3 {
   text-align: left;
-  display: block;
-  font-family: 'Montserrat', sans-serif;
   margin-top: -3px;
 }
 
@@ -441,8 +403,6 @@ section {
 }
 
 .mint-amount-input {
-  justify-content: center;
-  align-items: center;
   width: 160px;
   font-size: 14px;
 }
@@ -614,7 +574,6 @@ input::-webkit-inner-spin-button {
     text-align: center;
     width: 200px;
     margin: auto;
-    margin-left: 7.5%;
   }
 
   .learn-btn {
@@ -686,12 +645,12 @@ input::-webkit-inner-spin-button {
   }
 
   #roadmap {
-    max-width: 75%;
+    max-width: 100%;
     max-height: auto;
     display: block;
   }
 
-  .roadmap-body, .roadmap-title {
+  .roadmap-title {
     display: none;
   }
 
@@ -701,31 +660,8 @@ input::-webkit-inner-spin-button {
 
   .small-roadmap-title-row1, .small-roadmap-title-row2 {
     text-align: center;
-    margin-left: 30%;
     font-weight: bold;
     margin-bottom: -10px;
-  }
-
-  .small-roadmap-body {
-    text-align: left;
-    width: 80%;
-    margin: auto;
-  }
-
-  #small-roadmap-headers {
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffc107;
-  }
-
-  #small-roadmap-info {
-    margin-left: 15%;
-    width: 100%;
-    font-weight: 550;
-  }
-
-  #vertical-line {
-    display: none;
   }
 
   .watch-title {
@@ -767,12 +703,13 @@ input::-webkit-inner-spin-button {
 
   .card-group {
     width: 100%;
-    margin-left: 7.5%;
+    margin-left: 10%;
   }
 
   .team-cards {
     width: 100%;
     margin: auto;
+    margin-left: 50%;
   }
 
   .team-cards-row1, .team-cards-row2 {
@@ -925,11 +862,6 @@ hr {
   .story-root {
     font-size: 16px;
   }
-
-  #roadmap-size {
-    max-width: 75%;
-    max-height: auto;
-  }
   
   .team-members {
     font-size: 16px;
@@ -937,9 +869,6 @@ hr {
 }
 
 /* roadmap.js */
-/* #roadmap {
-  
-} */
 
 .roadmap-title-row1 {
   margin-left: 37.5%;
@@ -952,49 +881,76 @@ hr {
   margin-right: 55%;
 }
 
-#vertical-line {
-  border-left: 6px solid white;
-  height: 630px;
-  float: left;
-  position: absolute;
-  margin-left: 50%;
+#v2-map-container {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.roadmap-body {
-  text-align: left;
-  margin-left: 20px;
+#map {
+  display: grid;
+  grid-template-rows: auto;
+  margin: auto;
 }
 
-#roadmap-headers {
+#map-titles {
+  text-align: center;
+  color: #ffc107;
   font-weight: bold;
   font-size: 18px;
-  color:#ffc107;
 }
 
-#roadmap-info {
-  width: 350px;
-  text-align: inherit;
-  font-weight: 600;
-  /* color: #ffc107; */
-}
-
-#roadmap-1, #roadmap-3, #roadmap-5, #roadmap-7 {
-  margin-left: 52.5%;
-}
-
-#roadmap-2, #roadmap-4, #roadmap-6 {
-  text-align: right;
-  width: 350px;
+#map-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  text-align: center;
+  font-weight: bold;
   margin: auto;
-  margin-right: 52.5%;
 }
 
-#roadmap-7 {
-  margin-bottom: 50px;
+#map-items {
+  width: 250px;
+  display: block;
+  justify-self: center;
+}
+
+
+.accordion {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.accordion-button {
+  background: #1d1d1d;
+  color: #fdfdfd;
+  font-weight: bold;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fdfdfd;
+  background-color: #1d1d1d;
+}
+
+.accordion-item {
+  background-color: #000000;
+}
+
+#accordion-header {
+  text-align: center;
+}
+
+#donate {
+  text-align: left;
 }
 
 @media screen and (min-width: 800px) {
-  .small-roadmap-body, .small-roadmap-title, .small-watch-title, .small-about-header, .small-team-title, .small-artist-header, .small-artist-info-block {
+  .small-roadmap-title, .small-watch-title, .small-about-header, .small-team-title, .small-artist-header, .small-artist-info-block {
     display: none;
   }
 }
@@ -1059,17 +1015,14 @@ hr {
 
 .card-group {
   height: 315px;
-}
-
-.card-group {
-  margin-bottom: 10px;
+  margin: 20px 10px 10px 10px;
 }
 
 .team-cards {
   background-color: #1d1d1d !important;
   width: 80%;
   height: 315px;
-  margin: 0 5px;
+  margin: 0 auto;
   display: block;
 }
 
@@ -1080,13 +1033,24 @@ hr {
 }
 
 .team-cards-row2 {
-  width: 60%;
+  width: 70%;
   margin: auto;
+}
+
+@media screen and (max-width: 425px) {
+  .team-cards-row2 {
+    margin: 50px auto auto auto;
+  }
+  
+  .accordion-body {
+    width: 50%;
+  }
 }
 
 .card-imgs {
   width: 128px;
   height: 128px;
+  position: relative;
   margin: auto;
   margin-top: 5px;
   border-radius: 50%;

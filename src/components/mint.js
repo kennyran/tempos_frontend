@@ -3,7 +3,6 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import tuxwalking from '../characters/Tux-walking.png'
 import mig from '../characters/mig-transp.png'
-import gif from '../img/gif/tempos_sneakpeak.gif'
 //import Countdown from './countdownTimer';
 import Whitelist from './whitelist';
 
@@ -30,13 +29,10 @@ export default class Mint extends React.Component {
                         <p>TEMPOS is collection of 3,000 NFTs that bridges high end watches of the physical with the digital world. We are a community based project that utilizes the technology of NFTs to disrupt markets that are traditionally difficult to get into.</p>
                     </div>
                     <div className="gif-countdown">
-                        <div className="gif">
-                            <img src={gif} alt="sneakpeak gif" height="225" width="225"/>
-                        </div>
                         <div className="countdown-card">
                             <div className="countdown">
                                 {/* <Countdown/> */}
-                                COUNTDOWN TO MINT:
+                                COUNTDOWN TO MINT & ART SNEAKPEAK:
                                 <p>
                                     Coming soon<span className="dot dot1">.</span><span className="dot dot2">.</span><span className="dot dot3">.</span>
                                 </p>

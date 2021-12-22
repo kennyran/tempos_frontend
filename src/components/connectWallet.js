@@ -67,7 +67,7 @@ export default class ConnectButton extends React.Component {
           </div>
         </Button>
     ) : (
-      <Button onClick={this.loadWeb3}>Connect Wallet</Button>
+      <Button onClick={this.loadWeb3} variant="light" className="nav-mint-btn">Connect Wallet</Button>
     );
     }
   }

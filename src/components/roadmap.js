@@ -1,6 +1,9 @@
 import React from 'react';
 import '../App.css'
 
+// =====// React Bootstrap Imports //======
+import Accordion from 'react-bootstrap/Accordion'
+
 export default class Roadmap extends React.Component {
 
     render() {
@@ -12,129 +15,122 @@ export default class Roadmap extends React.Component {
                     <div className="roadmap-title-row2">MAP</div>
                 </div>
 
-                <div id="vertical-line"></div>
-                    <div className="roadmap-body">
-                        <div id="roadmap-1">
-                            <div id="roadmap-headers">
-                                10%: COMMUNITY & SOCIALS
-                            </div>
-                            <div id="roadmap-info">
-                                TEMPOS officially launches Discord, Website, Medium, & Twitter pages
-                            </div>
-                        </div>
-                        <div id="roadmap-2">
-                            <div id="roadmap-headers">
-                                25%: WHITELIST
-                            </div>
-                            <div id="roadmap-info">
-                                Whitelist opens to people with 1000 spots available
-                            </div>
-                        </div>
-                        <div id="roadmap-3">
-                            <div id="roadmap-headers">
-                                50%: PRESALE/MINTING
-                            </div>
-                            <div id="roadmap-info">
-                                Presale minting TEMPOS opens to whitelisted members hours before public minting
-                            </div>
-                        </div>
-                        <div id="roadmap-4">
-                            <div id="roadmap-headers">
-                                60%: PUBLIC MINTING
-                            </div>
-                            <div id="roadmap-info">
-                                Public sale begins, HAPPY MINTING!
-                            </div>
-                        </div>
-                        <div id="roadmap-5">
-                            <div id="roadmap-headers">
-                                75%: MINTING FINISHED
-                            </div>
-                            <div id="roadmap-info">
-                                Minting is completed and now all members currently holding TEMPOS NFT's are eligible to be selected to win 1 of the luxury watches in our inventory. 24 recipients will be selected.
-                            </div>
-                        </div>
-                        <div id="roadmap-6">
-                            <div id="roadmap-headers">
-                                90%: WATCH RECIPIENTS SELECTED
-                            </div>
-                            <div id="roadmap-info">
-                                24 lucky TEMPOS holders will be RANDOMLY selected to receive a luxury watch from our inventory. The 25th watch will be reserved for the 1 person who figures out our little Easter Egg.
-                            </div>
-                        </div>
-                        <div id="roadmap-7">
-                            <div id="roadmap-headers">
-                                100%: WATCHES SHIPPED & EASTER EGG FOUND
-                            </div>
-                            <div id="roadmap-info">
-                                We've come to the end of the roadmap, all watch recipients will have been contacted and had their items shipped. 
-                            </div>
-                        </div>
-                    </div>
-
                     <div className="small-roadmap-title">
                         <div className="small-roadmap-title-row1">ROAD</div>
                         <div className="small-roadmap-title-row2">MAP</div>
                     </div>
+                    <Accordion defaultActiveKey="0" flush>
+                        <Accordion.Item eventKey="0">
+                        <Accordion.Header id="accordion-header">TEMPOS GEN 1: 2D ART</Accordion.Header>
+                            <Accordion.Body>
+                                <div id="v2-map-container">
+                                    <div id="map map-center">
+                                        <div id="map-titles">TEMPOS GEN 1: 2D ART</div>
+                                        <div id="map-list">
+                                            <div id="map-items">
+                                                <div id="map-titles">PHASE 1-1</div>
+                                                <div>
+                                                    Dropping of 1st gen. luxury watch art
+                                                </div>
+                                            </div>
+                                            <div id="map-items">
+                                                <div id="map-titles">PHASE 1-2</div>
+                                                <div>
+                                                    Genesis giveaway winners will be randomly picked
+                                                </div>
+                                            </div>
+                                            <div id="map-items">
+                                                <div id="map-titles">PHASE 1-3</div>
+                                                <div>
+                                                    Shipping of the physical watches
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header id="accordion-header">TEMPOS GEN 2: 3D ART</Accordion.Header>
+                            <Accordion.Body>
+                                <div id="v2-map-container">
+                                    <div>
+                                    <div id="map-titles">TEMPOS GEN 2: 3D ART</div>
+                                        <div id="map-list">
+                                            <div id="map-items">
+                                                <div id="map-titles">PHASE 2-1</div>
+                                                <div>
+                                                    Revealing the 3D creations
+                                                </div>
+                                            </div>
+                                            <div id="map-items">
+                                                <div id="map-titles">PHASE 2-2</div>
+                                                <div>
+                                                    Launching of Tempos Season 1
+                                                </div>
+                                            </div>
+                                            <div id="map-items">
+                                                <div id="map-titles">PHASE 2-3</div>
+                                                <div>
+                                                    Time to get personal, with custom experiences for all Season 1 winners
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
 
-                    <div className="small-roadmap-body">
-                        <div id="small-roadmap-1">
-                            <div id="small-roadmap-headers">
-                                10%: COMMUNITY & SOCIALS
-                            </div>
-                            <div id="small-roadmap-info">
-                                TEMPOS officially launches Discord, Website, Medium, & Twitter pages
-                            </div>
-                        </div>
-                        <div id="small-roadmap-2">
-                            <div id="small-roadmap-headers">
-                                25%: WHITELIST
-                            </div>
-                            <div id="small-roadmap-info">
-                                Whitelist opens to people with 1000 spots available
-                            </div>
-                        </div>
-                        <div id="small-roadmap-3">
-                            <div id="small-roadmap-headers">
-                                50%: PRESALE/MINTING
-                            </div>
-                            <div id="small-roadmap-info">
-                                Presale minting TEMPOS opens to whitelisted members hours before public minting
-                            </div>
-                        </div>
-                        <div id="small-roadmap-4">
-                            <div id="small-roadmap-headers">
-                                60%: PUBLIC MINTING
-                            </div>
-                            <div id="small-roadmap-info">
-                                Public sale begins, HAPPY MINTING!
-                            </div>
-                        </div>
-                        <div id="small-roadmap-5">
-                            <div id="small-roadmap-headers">
-                                75%: MINTING FINISHED
-                            </div>
-                            <div id="small-roadmap-info">
-                                Minting is completed and now all members currently holding TEMPOS NFT's are eligible to be selected to win 1 of the luxury watches in our inventory. 24 recipients will be selected.
-                            </div>
-                        </div>
-                        <div id="small-roadmap-6">
-                            <div id="small-roadmap-headers">
-                                90%: WATCH RECIPIENTS SELECTED
-                            </div>
-                            <div id="small-roadmap-info">
-                                24 lucky TEMPOS holders will be RANDOMLY selected to receive a luxury watch from our inventory. The 25th watch will be reserved for the 1 person who figures out our little Easter Egg.
-                            </div>
-                        </div>
-                        <div id="small-roadmap-7">
-                            <div id="small-roadmap-headers">
-                                100%: WATCHES SHIPPED & EASTER EGG FOUND
-                            </div>
-                            <div id="small-roadmap-info">
-                                We've come to the end of the roadmap, all watch recipients will have been contacted and had their items shipped. 
-                            </div>
-                        </div>
-                    </div>
+                        <Accordion.Item eventKey="2">
+                            <Accordion.Header id="accordion-header">TEMPOS GEN 3: WATCH OF THE METAVERSE</Accordion.Header>
+                            <Accordion.Body>
+                                <div id="v2-map-container">
+                                    <div>
+                                    <div id="map-titles">TEMPOS GEN 3: WATCH OF THE METAVERSE</div>
+                                        <div id="map-list">
+                                            <div id="map-items">
+                                                <div id="map-titles">PHASE 3-1</div>
+                                                <div>
+                                                    Bridging the physical and digital worlds with custom watches for the Metaverse
+                                                </div>
+                                            </div>
+                                            <div id="map-items">
+                                                <div id="map-titles">PHASE 3-2</div>
+                                                <div>
+                                                    Launching of Season 2
+                                                </div>
+                                            </div>
+                                            <div id="map-items">
+                                                <div id="map-titles">PHASE 3-3</div>
+                                                <div>
+                                                    Keep dropping dope shit
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
+
+                        <Accordion.Item>
+                            <Accordion.Header id="accordion-header">
+                                DONATION TO LOCAL & GLOBAL CAUSES
+                            </Accordion.Header>
+                            <Accordion.Body>
+                                <div id="v2-map-container">
+                                    <div id="map-titles">DONATION TO LOCAL AND GLOBAL CAUSES</div>
+                                    <div id="map-list">
+                                        <div id="map-items">
+                                            <div id="donate">
+                                                With all of our drops and Seasons we will be donating a portion of the profits to charities both locally in Puerto Rico and globally to help people everywhere in need affected by natual disasters
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
             </div>
         )
     }
