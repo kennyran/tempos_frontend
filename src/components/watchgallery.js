@@ -40,7 +40,7 @@ export default class WatchGallery extends React.Component {
                 <div id="watch-body">
                     <Carousel>
                         <Carousel.Item>
-                            <img className="d-block w-50 img-slide" id="small-img" src={batmanOyster} alt="first slide"/>
+                            <img className="d-block w-50 img-slide" id="small-img" src={batmanOyster} alt="first slide" loading="lazy" />
                             <Carousel.Caption>
                                 <div id="img-text">
                                     Rolex Batman Oyster
@@ -49,7 +49,7 @@ export default class WatchGallery extends React.Component {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block w-50 img-slide" id="small-img" src={batmanJubilee} alt="2nd slide"/>
+                            <img className="d-block w-50 img-slide" id="small-img" src={batmanJubilee} alt="2nd slide" loading="lazy"/>
                             <Carousel.Caption>
                                 <div id="img-text">
                                     Rolex Batman Jubilee
@@ -58,7 +58,7 @@ export default class WatchGallery extends React.Component {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block w-50 img-slide" id="small-img" src={pepsiOyster} alt="3rd slide"/>
+                            <img className="d-block w-50 img-slide" id="small-img" src={pepsiOyster} alt="3rd slide" loading="lazy" />
                             <Carousel.Caption>
                                 <div id="img-text">
                                     Rolex Pepsi Oyster
@@ -67,7 +67,7 @@ export default class WatchGallery extends React.Component {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block w-50 img-slide" id="small-img" src={pepsiJubilee} alt="4th slide"/>
+                            <img className="d-block w-50 img-slide" id="small-img" src={pepsiJubilee} alt="4th slide" loading="lazy" />
                             <Carousel.Caption>
                                 <div id="img-text">
                                     Rolex Pepsi Jubilee
@@ -76,7 +76,7 @@ export default class WatchGallery extends React.Component {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block w-50 img-slide" id="small-img" src={subDate} alt="5th slide"/>
+                            <img className="d-block w-50 img-slide" id="small-img" src={subDate} alt="5th slide" loading="lazy" />
                             <Carousel.Caption>
                                 <div id="img-text">
                                     Rolex Submariner Date
@@ -85,7 +85,7 @@ export default class WatchGallery extends React.Component {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block w-50 img-slide" id="small-img" src={subKermit} alt="6th slide"/>
+                            <img className="d-block w-50 img-slide" id="small-img" src={subKermit} alt="6th slide" loading="lazy" />
                             <Carousel.Caption>
                                 <div id="img-text">
                                     Rolex Submariner Kermit
@@ -94,7 +94,7 @@ export default class WatchGallery extends React.Component {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block w-50 img-slide" id="small-img" src={skydweller} alt="7th slide"/>
+                            <img className="d-block w-50 img-slide" id="small-img" src={skydweller} alt="7th slide" loading="lazy" />
                             <Carousel.Caption>
                                 <div id="img-text">
                                     Rolex Sky Dweller Blue Dial
@@ -103,7 +103,7 @@ export default class WatchGallery extends React.Component {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block w-50 img-slide" id="small-img" src={daytonaPanda} alt="8th slide"/>
+                            <img className="d-block w-50 img-slide" id="small-img" src={daytonaPanda} alt="8th slide" loading="lazy" />
                             <Carousel.Caption>
                                 <div id="img-text">
                                     Rolex Cosmograph Daytona White Gold Silver Dial Panda
@@ -112,7 +112,7 @@ export default class WatchGallery extends React.Component {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block w-50 img-slide" id="small-img" src={daytonaEverose} alt="9th slide"/>
+                            <img className="d-block w-50 img-slide" id="small-img" src={daytonaEverose} alt="9th slide" loading="lazy"/>
                             <Carousel.Caption>
                                 <div id="img-text">
                                     Rolex Cosmograph Daytona Full Rose Gold Chocolate Dial
@@ -121,7 +121,7 @@ export default class WatchGallery extends React.Component {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block w-50 img-slide" id="ap-watches" src={ap15500} alt="10th slide"/>
+                            <img className="d-block w-50 img-slide" id="ap-watches" src={ap15500} alt="10th slide" loading="lazy"/>
                             <Carousel.Caption>
                                 <div id="img-text">
                                     AP Royal Oak 15500 Black Dial
@@ -130,7 +130,7 @@ export default class WatchGallery extends React.Component {
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className="d-block w-50 img-slide" id="ap-watches" src={apChrono} alt="11th slide"/>
+                            <img className="d-block w-50 img-slide" id="ap-watches" src={apChrono} alt="11th slide" loading="lazy"/>
                             <Carousel.Caption>
                                 <div id="img-text">
                                     AP Chrono Panda

@@ -48,7 +48,7 @@ export default class Mint extends React.Component {
                     <div className="card1">
                         <Card className="normal-mint">
                             <Card.Body>
-                                <Card.Img src={mig} className="mint-card-img" /> 
+                                <Card.Img src={mig} className="mint-card-img" loading="lazy" /> 
                                 <Card.Text>
                                     <div className="card-text-row1">
                                         NORMAL
@@ -59,7 +59,7 @@ export default class Mint extends React.Component {
                                 </Card.Text>
                                 <Card.Text>
                                     <div className="card-text-row3">
-                                        Cost: 0.25Ξ
+                                        Cost: 0.30Ξ
                                     </div>
                                     <div className="card-text-row3">
                                         Available: 3000/3000
@@ -77,7 +77,7 @@ export default class Mint extends React.Component {
                     <div className="card2">
                         <Card className="legendary-mint">
                             <Card.Body>
-                                <Card.Img src={tuxwalking} className="mint-card-img"/> 
+                                <Card.Img src={tuxwalking} className="mint-card-img" loading="lazy"/> 
                                 <Card.Text>
                                     <div className="leg-text-row1">
                                         LEGENDARY

@@ -38,7 +38,7 @@ export default class Team extends React.Component {
                 </div>
                     <CardGroup className="team-cards-row1">
                     <Card className="team-cards">
-                        <Card.Img className="card-imgs" id="spence" src={john} variant="top" />
+                        <Card.Img className="card-imgs" id="john" src={john} variant="top" loading="lazy" />
                         <Card.Body>
                             <Card.Text>
                                 <div className="team-members">
@@ -49,7 +49,7 @@ export default class Team extends React.Component {
                         </Card.Body>
                     </Card>
                     <Card className="team-cards">
-                        <Card.Img className="card-imgs" src={jorge} variant="top" />
+                        <Card.Img className="card-imgs" src={jorge} variant="top" loading="lazy" />
                         <Card.Body>
                             <Card.Text>
                             <div className="team-members">
@@ -60,7 +60,7 @@ export default class Team extends React.Component {
                         </Card.Body>
                     </Card>
                     <Card className="team-cards">
-                        <Card.Img className="card-imgs" id="spence" src={spencer} variant="top" />
+                        <Card.Img className="card-imgs" id="spence" src={spencer} variant="top" loading="lazy" />
                         <Card.Body>
                             <Card.Text>
                                 <div className="team-members">
@@ -76,7 +76,7 @@ export default class Team extends React.Component {
                         </Card.Body>
                     </Card>
                     <Card className="team-cards">
-                        <Card.Img className="card-imgs" src={jan} variant="top" />
+                        <Card.Img className="card-imgs" src={jan} variant="top" loading="lazy" />
                         <Card.Body>
                             <Card.Text>
                             <div className="team-members">
@@ -92,7 +92,7 @@ export default class Team extends React.Component {
                         </Card.Body>
                     </Card>
                     <Card className="team-cards">
-                        <Card.Img className="card-imgs" src={kevin} id="kevin" variant="top" />
+                        <Card.Img className="card-imgs" src={kevin} id="kevin" variant="top" loading="lazy" />
                         <Card.Body>
                             <Card.Text>
                                 <div className="team-members">
@@ -110,7 +110,7 @@ export default class Team extends React.Component {
                     </CardGroup>
                     <CardGroup className="team-cards-row2 row2">
                     <Card className="team-cards">
-                        <Card.Img className="card-imgs" src={jeicarlo} variant="top" />
+                        <Card.Img className="card-imgs" src={jeicarlo} variant="top" loading="lazy" />
                         <Card.Body>
                             <Card.Text>
                                 <div className="team-members">
@@ -126,7 +126,7 @@ export default class Team extends React.Component {
                         </Card.Body>
                     </Card>
                     <Card className="team-cards">
-                    <Card.Img className="card-imgs" src={kenny} id="kenny" variant="top" />
+                    <Card.Img className="card-imgs" src={kenny} id="kenny" variant="top" loading="lazy" />
                     <Card.Body>
                         <Card.Text>
                             <div className="team-members">
@@ -142,7 +142,7 @@ export default class Team extends React.Component {
                     </Card.Body>
                     </Card>
                     <Card className="team-cards">
-                    <Card.Img className="card-imgs" id="mig" src={miguel} variant="top" />
+                    <Card.Img className="card-imgs" id="mig" src={miguel} variant="top" loading="lazy" />
                         <Card.Body>
                             <Card.Text>
                                 <div className="team-members">
@@ -158,7 +158,7 @@ export default class Team extends React.Component {
                         </Card.Body>
                     </Card>
                     <Card className="team-cards">
-                        <Card.Img className="card-imgs" src={kiana} variant="top" />
+                        <Card.Img className="card-imgs" src={kiana} variant="top" loading="lazy" />
                         <Card.Body>
                             <Card.Text>
                             <div className="team-members">

@@ -4,7 +4,7 @@ import '../App.css'
 // =====// React Bootstrap Imports //======
 import Accordion from 'react-bootstrap/Accordion'
 
-export default class Roadmap extends React.Component {
+export default class FAQ extends React.Component {
 
     render() {
         return(
@@ -24,7 +24,7 @@ export default class Roadmap extends React.Component {
                         <Accordion.Header id="accordion-header">TEMPOS GEN 1: 2D ART</Accordion.Header>
                             <Accordion.Body>
                                 <div id="v2-map-container">
-                                    <div id="map map-center">
+                                    <div>
                                         <div id="map-titles">TEMPOS GEN 1: 2D ART</div>
                                         <div id="map-list">
                                             <div id="map-items">

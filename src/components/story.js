@@ -26,17 +26,17 @@ export default class Story extends React.Component {
                 <div className="art-sneakpeak" id="art-cards">
                     <Card className="card-art">
                         <Card.Body className="card-1">
-                            <Card.Img className="art-img" src={spence}/>
+                            <Card.Img className="art-img" src={spence} loading="lazy"/>
                         </Card.Body>
                     </Card>
                     <Card className="card-art">
                         <Card.Body className="card-2">
-                            <Card.Img className="art-img" src={walking}/>
+                            <Card.Img className="art-img" src={walking} loading="lazy"/>
                         </Card.Body>
                     </Card>
                     <Card className="card-art">
                         <Card.Body className="card-3">
-                            <Card.Img className="art-img" src={kev}/>
+                            <Card.Img className="art-img" src={kev} loading="lazy"/>
                         </Card.Body>
                     </Card>
                 </div>
