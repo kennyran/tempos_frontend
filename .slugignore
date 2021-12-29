@@ -9,10 +9,6 @@
 # production
 /build
 
-src 
-public
-README.md
-
 # misc
 .DS_Store
 .env.local
