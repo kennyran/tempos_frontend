@@ -18,7 +18,7 @@ h3 {
 
 /* Section view height for each component */
 section {
-  min-height: 75vh;
+  min-height: 70vh;
   display: block;
 }
 
@@ -676,6 +676,13 @@ input::-webkit-inner-spin-button {
   .team-cards-row2 {
     width: 80% !important;
   }
+
+  .faq-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+  }
 }
 
 @media screen and (min-width: 1350px) {
@@ -842,6 +849,8 @@ hr {
   display: grid;
   width: 80%;
   margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #map-titles {
@@ -947,14 +956,15 @@ hr {
   margin: auto;
 }
 
-.faq-wrapper {
-  max-width: 250px;
+.faq-title {
+  margin-bottom: 30px;
 }
 
-.faq-nav {
-  text-align: left;
-  width: 100%;
-  height: auto;
+/* .faq-wrapper {
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -966,9 +976,95 @@ hr {
   -ms-flex-wrap: wrap;
   align-items: flex-start;
   flex-wrap: wrap;
+} */
+
+.full-faq {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.faq-nav {
+  max-width: 250px;
+  text-align: left;
+  align-self: start;
+}
+
+.faq-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#ques-title {
+  width: 100%;
+  background: none;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  display: block;
+  border: 1px solid #fdfdfd;
+  cursor: pointer;
+  font-weight: 650;
+}
+
+#ques-title:hover {
+  background:#2e2e2e;
+  transition: all 0.5s ease-in-out;
+}
+
+#ques-title:active {
+  background: #2e2e2e;
+}
+
+
+.faq-ans {
+  text-align: left;
+  max-width: 400px;
+}
+
+.inner-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid #fdfdfd;
+  line-height: 50px;
+  margin: 0 15px 20px 20px;
+  color:#ffc107;
+  text-align: left;
+}
+
+.inner-faq, .inner-title {
+  padding: 0 25px;
+}
+
+.inner-faq {
+  font-weight: 600;
+}
+
+.faq-ans:active {
+  display: block;
+}
+
+.faq-img {
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-start; */
+  align-self: end;
+}
+
+.inner-image {
+  height: auto;
+  max-width: 415px;
 }
 
 a {
+  color: #fdfdfd;
+}
+
+a:hover {
   color: #fdfdfd;
 }
 
@@ -1055,9 +1151,4 @@ a {
 #team-name {
   font-weight: bold;
   color: #fc3637;
-}
-
-.page-end {
-  margin: 10px;
-  background-color: #000000;
 }

@@ -9,7 +9,7 @@ import Roadmap from './components/roadmap'
 import WatchGallery from './components/watchgallery';
 import TemposNav from './components/navbar'
 import Artist from './components/artists';
-//import FAQ from './components/faq'
+import FAQ from './components/faq'
 
 // ======// React Bootstrap imports //======
 
@@ -45,16 +45,12 @@ class App extends React.Component {
       <section>
         <Roadmap />
       </section>
-      {/* <section>
+      <section>
         <FAQ />
-      </section> */}
+      </section>
       <section>
       <Team />
       </section>
-
-      <div className="page-end">
-
-      </div>
     </div>
   );
 }
