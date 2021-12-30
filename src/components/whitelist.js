@@ -70,22 +70,28 @@ export default class Whitelist extends React.Component {
                                 </FloatingLabel>
                             </Form.Group>
                             <Form.Group>
-                                <FloatingLabel controlId="floatinginput" label="E-mail Address (name@example.com)"
+                                <FloatingLabel controlId="floatinginput" label="E-mail Address"
                                 className="mb-3">
                                 <Form.Control 
                                 type="text" 
                                 onChange={this.changeHandler} placeholder="name@example.com" name="entry.457389616"
                                 required/>
+                                <Form.Text className="text-muted">
+                                    name@example.com
+                                </Form.Text>
                                 </FloatingLabel>
                             </Form.Group>
                             <Form.Group>
-                                <FloatingLabel controlId="floatinginput" label="Ethereum Wallet Address (i.e. 0x0000)"
+                                <FloatingLabel controlId="floatinginput" label="Ethereum Wallet Address"
                                 className="mb-3">
                                     <Form.Control 
                                     type="text" 
                                     onChange={this.changeHandler} placeholder="Wallet Address (i.e. 0x0000)" 
                                     name="entry.227509160"
                                     required/>
+                                    <Form.Text className="text-muted">
+                                    i.e. 0x0000
+                                    </Form.Text>
                                 </FloatingLabel>
                             </Form.Group>
                             <Form.Group>
@@ -102,12 +108,15 @@ export default class Whitelist extends React.Component {
                                 </FloatingLabel>
                             </Form.Group>
                             <Form.Group>
-                                <FloatingLabel controlId="floatinginput" label="Discord Username (ex. DiscordUser#0001)"
+                                <FloatingLabel controlId="floatinginput" label="Discord Username"
                                 className="mb-3">
                                     <Form.Control 
                                     type="text" 
                                     onChange={this.changeHandler} placeholder="User Name (i.e. User#0001)"
                                     name="entry.1131314337" required/>
+                                    <Form.Text className="text-muted">
+                                    i.e. DiscordUser#0001
+                                    </Form.Text>
                                 </FloatingLabel>
                             </Form.Group>
                             

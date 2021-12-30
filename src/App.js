@@ -11,12 +11,6 @@ import TemposNav from './components/navbar'
 import Artist from './components/artists';
 import FAQ from './components/faq'
 
-// ======// React Bootstrap imports //======
-
-// import Navbar from 'react-bootstrap/Navbar'
-// import Nav from 'react-bootstrap/Nav'
-// import Container from 'react-bootstrap/Container'
-
 class App extends React.Component {
   
   render() {
@@ -49,7 +43,7 @@ class App extends React.Component {
         <FAQ />
       </section>
       <section>
-      <Team />
+        <Team />
       </section>
     </div>
   );

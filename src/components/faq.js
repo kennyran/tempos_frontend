@@ -27,27 +27,27 @@ export default class Artist extends React.Component {
                             <ul className="faq-list">
                                 <li id="ques-title" onClick={() => this.setState({ faq1: true, faq2: false, faq3: false, faq4: false, faq5: false })}>
                                     <div id="ques-1">
-                                        1. How to Mint?
+                                        1. <span>How to Mint?</span>
                                     </div>
                                 </li>
                                 <li id="ques-title" onClick={() => this.setState({ faq2: true, faq1: false, faq3: false, faq4: false, faq5: false })}>
                                     <div id="ques-2">
-                                        2. What's a Season?
+                                        2. <span>What's a Season?</span>
                                     </div>
                                 </li>
                                 <li id="ques-title" onClick={() => this.setState({ faq3: true, faq1: false, faq2: false, faq4: false, faq5: false })}>
                                     <div id="ques-3" >
-                                        3. What's the Genesis Collection?
+                                        3. <span>What's the Genesis Collection?</span>
                                     </div>
                                 </li>
                                 <li id="ques-title" onClick={() => this.setState({ faq4: true, faq1: false, faq2: false, faq3: false, faq5: false })}>
                                     <div id="ques-4">
-                                        4. How to receive physical watches?
+                                        4. <span>How to receive physical watches?</span>
                                     </div>
                                 </li>
                                 <li id="ques-title" onClick={() => this.setState({ faq5: true, faq1: false, faq2: false, faq3: false, faq4: false })}>
                                     <div id="ques-5">
-                                        5. How will the giveaway work?
+                                        5. <span>How will the giveaway work?</span>
                                     </div>
                                 </li>
                             </ul>
@@ -116,7 +116,7 @@ export default class Artist extends React.Component {
                             </div> }
                         </div>
                         <div className="faq-img">
-                            <img className="inner-image" src={watch} alt="Watch Sneakpeak"/>
+                            <img className="inner-image small-img" src={watch} alt="Watch Sneakpeak"/>
                         </div>
                     </div>
                 </div>

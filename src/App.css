@@ -50,64 +50,6 @@ section {
   margin-right: -80px;
 }
 
-/* Media queries for different screen sizes */
-@media screen and (max-width: 575px) {
-  .community-icons {
-    display: none;
-  }
-
-  .navbar {
-    width: 100%;
-    margin-right: 20%;
-  }
-
-  .navbar-collapse {
-    margin-right: 25%;
-  }
-
-  .title {
-    display: none;
-  }
-
-  #nav-title {
-    display: none;
-  }
-
-  .small-title {
-    display: block;
-    text-align: center;
-  }
-
-  #sm-nav-title {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    margin: auto;
-    font-size: 40px;
-    font-weight: bold;
-  }
-
-  .learn-btn {
-    margin: auto;
-    text-align: center;
-    margin-left: 10%;
-  }
-
-  .art-sneakpeak, .card-art, .card-1, .card-2, .card-3 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:576px) {
-  .small-title {
-    display: none;
-  }
-
-  #sm-nav-title {
-    display: none;
-  }
-}
-
 /* Social Icons in top right of page: Community.js */
 .img-color {
   color: white;
@@ -497,209 +439,6 @@ input::-webkit-inner-spin-button {
   
 }
 
-/* Media query for screens up to 800px (iPads) */
-@media screen and (max-width: 809px) {
-  .App {
-    display: block;
-    float: none;
-  }
-  .title-root {
-    font-size: 18px;
-    text-align: left;
-    display: inline-block;
-    width: 80%;
-  }
-
-  .title, .vert-text, .card-img, #art-cards, .roadmap-title, .watch-title, .team-title, .about-header, .arrow, .artist-title-row1, .artist-title-row2, .artist-info-block {
-    display: none;
-  }
-
-  .title-text {
-    font-size: 16px;
-    font-weight: 600;
-  }
-
-  #mint {
-    width: 80%;
-    justify-content: center;
-    display: block;
-    float: none;
-  }
-
-  .mint-cards, .gif-countdown {
-    width: 80%;
-    display: inline-block;
-    text-align: center;
-  }
-
-  .normal-mint, .legendary-mint {
-    width: 250px;
-    height: 225px;
-    text-align: center;
-  }
-
-  .gif-countdown {
-    width: 250px;
-    height: 175px;
-    margin: 0 auto auto 4%;
-    font-size: 16px;
-    padding: 10px 0 0 0;
-  }
-
-  .gif {
-    margin-top: 10px;
-  }
-
-  .countdown-card {
-    margin: 0 auto;
-    margin-left: -5%;
-  }
-
-  .countdown {
-    display: block;
-    text-align: center;
-    width: 200px;
-    margin: auto;
-  }
-
-  .learn-btn {
-    margin-left: -5%;
-  }
-
-  .card-text-row1, .card-text-row2, .card-text-row3, .leg-text-row1, .leg-text-row2, .leg-text-row3 {
-    text-align: center;
-  }
-
-  input {
-    margin-left: 13%;
-  }
-
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  .story-root {
-    font-size: 16px;
-    text-align: left;
-    width: 80%;
-  }
-
-  #headers {
-    width: 80%;
-    text-align: center;
-  }
-
-  .small-about-header {
-    font-size: 40px;
-    margin-left: 20px;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  .small-about-title-row1 {
-    margin-bottom: -10px;
-  }
-
-  .small-artist-header {
-    font-weight: 550;
-    font-size: 25px;
-    margin: auto;
-  }
-  
-  .small-artist-info-block {
-    font-weight: 550;
-    width: 100%;
-  }
-
-  #roadmap {
-    max-width: 100%;
-    max-height: auto;
-    display: block;
-  }
-
-  .small-roadmap-title {
-    font-size: 50px;
-  }
-
-  .small-roadmap-title-row1, .small-roadmap-title-row2 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: -10px;
-  }
-
-  .small-watch-title {
-    font-size: 40px;
-    font-weight: bold;
-  }
-
-  .small-watch-title-row1 {
-    margin-bottom: -10px;
-  }
-
-  .small-img-slide {
-    height: 200px;
-    width: 100px;
-    margin: auto;
-    display: block;
-  }
-  
-  .small-team-title {
-    font-size: 40px;
-    font-weight: bold;
-  }
-
-  .team-root {
-    font-size: 16px;
-    text-align: center;
-    display: block;
-    margin: auto;
-    width: 80%;
-  }
-
-  .card-group {
-    width: 100%;
-    margin-left: 10%;
-  }
-
-  .team-cards {
-    width: 100%;
-    margin: auto;
-    margin-left: 50%;
-  }
-
-  .team-cards-row1, .team-cards-row2 {
-    display: inline-block;
-  }
-
-  .team-cards-row2 {
-    width: 80% !important;
-  }
-
-  .faq-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: inline-block;
-  }
-}
-
-@media screen and (min-width: 1350px) {
-  section {
-    min-height: 60vh;
-    display: block;
-  }
-
-  .gif-countdown {
-    margin-top: 6%;
-  }
-
-  .countdown-card {
-    width: 50%;
-  }
-}
-
 span.transition-arrow {
   font-size: 125px;
   font-weight: bold;
@@ -821,17 +560,6 @@ hr {
   margin-bottom: 10px;
 }
 
-
-@media screen and (min-width: 415px) {
-  .story-root {
-    font-size: 16px;
-  }
-  
-  .team-members {
-    font-size: 16px;
-  }
-}
-
 /* roadmap.js */
 
 .roadmap-title-row1 {
@@ -907,12 +635,6 @@ hr {
 
 #donate {
   text-align: left;
-}
-
-@media screen and (min-width: 800px) {
-  .small-roadmap-title, .small-watch-title, .small-about-header, .small-team-title, .small-artist-header, .small-artist-info-block {
-    display: none;
-  }
 }
 
 /* WATCH INVENTORY PICTURES: watchgallery.js */
@@ -1115,17 +837,6 @@ a:hover {
   margin: auto;
 }
 
-@media screen and (max-width: 425px) {
-  .team-cards-row2 {
-    margin: 50px auto auto auto;
-  }
-  
-  .accordion-body {
-    width: 50%;
-    margin: 0 auto auto -5%;
-  }
-}
-
 .card-imgs {
   width: 128px;
   height: 128px;
@@ -1151,4 +862,306 @@ a:hover {
 #team-name {
   font-weight: bold;
   color: #fc3637;
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 575px) {
+
+  .navbar {
+    width: 100%;
+    margin-right: 20%;
+  }
+
+  .navbar-collapse {
+    margin-right: 25%;
+  }
+
+  .title {
+    display: none;
+  }
+
+  #nav-title {
+    display: none;
+  }
+
+  .small-title {
+    display: block;
+    text-align: center;
+  }
+
+  #sm-nav-title {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .learn-btn {
+    margin: auto;
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  .art-sneakpeak, .card-art, .card-1, .card-2, .card-3 {
+    display: none;
+  }
+
+  .modal-body {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .form-control {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .small-title {
+    display: none;
+  }
+
+  #sm-nav-title {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  .story-root {
+    font-size: 16px;
+  }
+  
+  .team-members {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .team-cards-row2 {
+    margin: 50px auto auto auto;
+  }
+  
+  .accordion-body {
+    width: 50%;
+    margin: 0 auto auto -5%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .small-roadmap-title, .small-watch-title, .small-about-header, .small-team-title, .small-artist-header, .small-artist-info-block {
+    display: none;
+  }
+}
+
+/* Media query for screens up to 800px (iPads) */
+@media screen and (max-width: 809px) {
+  .App {
+    display: block;
+    float: none;
+  }
+  .title-root {
+    font-size: 18px;
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+  }
+
+  .title, .vert-text, .card-img, #art-cards, .roadmap-title, .watch-title, .team-title, .about-header, .arrow, .artist-title-row1, .artist-title-row2, .artist-info-block {
+    display: none;
+  }
+
+  .title-text {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  #mint {
+    width: 80%;
+    justify-content: center;
+    display: block;
+    float: none;
+  }
+
+  .mint-cards, .gif-countdown {
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .normal-mint, .legendary-mint {
+    width: 250px;
+    height: 225px;
+    text-align: center;
+  }
+
+  .gif-countdown {
+    width: 250px;
+    height: 175px;
+    margin: 0 auto auto 4%;
+    font-size: 16px;
+    padding: 10px 0 0 0;
+  }
+
+  .gif {
+    margin-top: 10px;
+  }
+
+  .countdown-card {
+    margin: 0 auto;
+    margin-left: -5%;
+  }
+
+  .countdown {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+  }
+
+  .learn-btn {
+    margin-left: -5%;
+  }
+
+  .card-text-row1, .card-text-row2, .card-text-row3, .leg-text-row1, .leg-text-row2, .leg-text-row3 {
+    text-align: center;
+  }
+
+  input {
+    margin-left: 13%;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .story-root {
+    font-size: 16px;
+    text-align: left;
+    width: 80%;
+  }
+
+  #headers {
+    width: 80%;
+    text-align: center;
+  }
+
+  .small-about-header {
+    font-size: 40px;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .small-about-title-row1 {
+    margin-bottom: -10px;
+  }
+
+  .small-artist-header {
+    font-weight: 550;
+    font-size: 25px;
+    margin: auto;
+  }
+  
+  .small-artist-info-block {
+    font-weight: 550;
+    width: 100%;
+  }
+
+  #roadmap {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+  }
+
+  .small-roadmap-title {
+    font-size: 50px;
+  }
+
+  .small-roadmap-title-row1, .small-roadmap-title-row2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: -10px;
+  }
+
+  .small-watch-title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .small-watch-title-row1 {
+    margin-bottom: -10px;
+  }
+
+  .small-img-slide {
+    height: 200px;
+    width: 100px;
+    margin: auto;
+    display: block;
+  }
+  
+  .small-team-title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .team-root {
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+
+  /* .card-group {
+    width: 100%;
+    margin-left: 10%;
+  } */
+
+  .team-cards {
+    width: 100%;
+    margin: auto;
+  }
+
+  .team-cards-row1, .team-cards-row2 {
+    display: inline-block;
+  }
+
+  .team-cards-row2 {
+    width: 80% !important;
+  }
+
+  .faq-list {
+    flex-wrap: nowrap;
+  }
+  
+  span {
+    display: none;
+  }
+
+  .faq-nav {
+    margin: 0 auto;
+  }
+
+  .inner-image {
+    max-width: 250px !important;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  section {
+    min-height: 70vh;
+    display: block;
+  }
+
+  .gif-countdown {
+    margin-top: 6%;
+  }
+
+  .countdown-card {
+    width: 50%;
+  }
 }
