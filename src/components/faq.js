@@ -111,7 +111,7 @@ export default class Artist extends React.Component {
                                     - The percentages will be applied to all NFT holders and we will use a random number generator that will include all of the wallet addresses of current holders to randomize the drop
                                 </p>
                                 <p className="inner-faq">
-                                    -In an effort to prove further transparency all drops will be shared screen and live in front of the community
+                                    - For full transparency with all drops, we will live stream them for our community to see.
                                 </p>
                             </div> }
                         </div>
