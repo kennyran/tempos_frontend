@@ -406,7 +406,7 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
 }
 
-.form-submit:hover {
+.form-submit:hover, .form-submit:focus {
   background-color: #1d1d1d;
 }
 

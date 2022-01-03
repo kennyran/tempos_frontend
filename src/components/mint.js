@@ -59,7 +59,7 @@ export default class Mint extends React.Component {
                                 </Card.Text>
                                 <Card.Text>
                                     <div className="card-text-row3">
-                                        Cost: 0.30Ξ
+                                        Cost: 0.12Ξ
                                     </div>
                                     <div className="card-text-row3">
                                         Available: 3000/3000
