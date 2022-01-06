@@ -828,15 +828,10 @@ a:hover {
   display: inline-block;
 }
 
-.team-cards-row1 {
+.team-cards-row1, .team-cards-row2 {
   width: 80%;
   margin: auto;
   margin-bottom: 10px;
-}
-
-.team-cards-row2 {
-  width: 70%;
-  margin: auto;
 }
 
 .card-imgs {

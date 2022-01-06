@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 // ======// Avatar Imports //======
 import kenny from '../img/avatars/kenny_avatar.png'
-import jeicarlo from '../img/avatars/jei-pfp.png'
+// import jeicarlo from '../img/avatars/jei-pfp.png'
 import spencer from '../img/avatars/Spencer-pfp.png'
 import kevin from '../img/avatars/kevin-pfp.png'
 import miguel from '../img/avatars/miguel-pfp.png'
@@ -60,22 +60,6 @@ export default class Team extends React.Component {
                         </Card.Body>
                     </Card>
                     <Card className="team-cards">
-                        <Card.Img className="card-imgs" id="spence" src={spencer} variant="top" loading="lazy" />
-                        <Card.Body>
-                            <Card.Text>
-                                <div className="team-members">
-                                    <div id="team-name">Whitekicks</div>
-                                    <div id="team-role">Crypto Market Advisor</div>
-                                    <div id="team-socials">
-                                        <a href="https://twitter.com/kickswhite" target="_blank" rel="noreferrer">
-                                            <img src={twitter} alt="Twitter"/>
-                                        </a>
-                                    </div>
-                                </div>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card className="team-cards">
                         <Card.Img className="card-imgs" src={jan} variant="top" loading="lazy" />
                         <Card.Body>
                             <Card.Text>
@@ -109,7 +93,7 @@ export default class Team extends React.Component {
                     </Card>
                     </CardGroup>
                     <CardGroup className="team-cards-row2 row2">
-                    <Card className="team-cards">
+                    {/* <Card className="team-cards">
                         <Card.Img className="card-imgs" src={jeicarlo} variant="top" loading="lazy" />
                         <Card.Body>
                             <Card.Text>
@@ -118,6 +102,22 @@ export default class Team extends React.Component {
                                     <div id="team-role">Co-Founder</div>
                                     <div id="team-socials">
                                         <a href="https://twitter.com/Jeicarlo" target="_blank" rel="noreferrer">
+                                            <img src={twitter} alt="Twitter"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card> */}
+                     <Card className="team-cards">
+                        <Card.Img className="card-imgs" id="spence" src={spencer} variant="top" loading="lazy" />
+                        <Card.Body>
+                            <Card.Text>
+                                <div className="team-members">
+                                    <div id="team-name">Whitekicks</div>
+                                    <div id="team-role">Crypto Market Advisor</div>
+                                    <div id="team-socials">
+                                        <a href="https://twitter.com/kickswhite" target="_blank" rel="noreferrer">
                                             <img src={twitter} alt="Twitter"/>
                                         </a>
                                     </div>
