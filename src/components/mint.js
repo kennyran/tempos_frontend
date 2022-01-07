@@ -4,7 +4,6 @@ import Button from 'react-bootstrap/Button'
 import tuxwalking from '../characters/Tux-walking.png'
 import mig from '../characters/mig-transp.png'
 //import Countdown from './countdownTimer';
-//import Whitelist from './whitelist';
 
 export default class Mint extends React.Component {
 
@@ -37,9 +36,6 @@ export default class Mint extends React.Component {
                                     Coming soon<span className="dot dot1">.</span><span className="dot dot2">.</span><span className="dot dot3">.</span>
                                 </p>
                             </div>
-                            {/* <div className="learn-btn">
-                                <Whitelist/>
-                            </div> */}
                         </div>
                     </div>
                 </div>
