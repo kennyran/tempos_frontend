@@ -10,8 +10,7 @@ import Button from 'react-bootstrap/Button'
 export default class ConnectButton extends React.Component {
   
     state ={
-        account: '',
-        loading: true
+        account: ''
     }
 
     async componentDidMount() {
