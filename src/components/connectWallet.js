@@ -16,6 +16,7 @@ export default class ConnectButton extends React.Component {
     async componentDidMount() {
         await this.loadWeb3()
         await this.loadBlockchainData()
+        await this.getWeb3()
     }
 
     async loadBlockchainData() {
@@ -25,35 +26,35 @@ export default class ConnectButton extends React.Component {
         this.setState({ account: accounts[0]})
     }
 
-    // loadWeb3 = async () => {
-    //     if (window.ethereum) {
-    //       window.web3 = new Web3(window.ethereum)
-    //       await window.ethereum.request({ method: "eth_requestAccounts" })
-    //     }
-    //     else if (window.web3) {
-    //       window.web3 = new Web3(window.web3.currentProvider)
-    //     }
-    //     else {
-    //       window.alert('Non-Ethereum browser detected. Refresh your page with your browser wallet!')
-    //     }
+    loadWeb3 = async () => {
+        if (window.ethereum) {
+          window.web3 = new Web3(window.ethereum)
+          await window.ethereum.request({ method: "eth_requestAccounts" })
+        }
+        else if (window.web3) {
+          window.web3 = new Web3(window.web3.currentProvider)
+        }
+        else {
+          window.alert('Non-Ethereum browser detected. Refresh your page with your browser wallet!')
+        }
 
-    //     const chainId = await window.ethereum.request({
-    //         method: 'eth_chainId'
-    //     })
+        const chainId = await window.ethereum.request({
+            method: 'eth_chainId'
+        })
 
-    //     const web3 = window.web3
+        const web3 = window.web3
         
-    //     const accounts = await web3.eth.getAccounts()
+        const accounts = await web3.eth.getAccounts()
 
-    //     if (chainId !== '0x1') {
-    //         alert("Please connect to Mainnet");
-    //     } else {
-    //         let wallet = accounts[0]
-    //         this.setState({
-    //             account: wallet
-    //         })
-    //     }
-    //   }
+        if (chainId !== '0x1') {
+            alert("Please connect to Mainnet");
+        } else {
+            let wallet = accounts[0]
+            this.setState({
+                account: wallet
+            })
+        }
+      }
 
       async getWeb3() {
         const providerOptions = {
