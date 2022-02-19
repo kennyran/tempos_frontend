@@ -1,14 +1,14 @@
 /* Global Styles */
 .App {
-  background: #000000;
-  color: #FBFBFB;
+  background: #040507;
+  color: #ffffff;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background: #141614;
-  color: #fbfbfb;
+  background: #040507;
+  color: #ffffff;
 }
 
 h3 {
@@ -22,16 +22,38 @@ section {
   display: block;
 }
 
-/* Navbar & Header: Navbar.js */
-.navbar {
-  /* align-items: center; */
-  color: white;
-  width: 80%;
-  margin: auto;
+.secondary-text, a, a:hover {
+  color: #C7CAD1
 }
 
-.nav-link {
-  color: white !important;
+/* Navbar & Header: Navbar.js */
+.navbar {
+  color: #ffffff;
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+}
+
+.title {
+  font-size: 45px;
+  font-weight: bold;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.nav-link, .navbar-dark, .navbar-nav, .nav, .navbar-expand-sm, .navbar-dark, .nav-text {
+  color: #ffffff;
+}
+
+.nav-text, .nav-vert-line {
+  margin: 0 10px 2.5px 5px;
+}
+
+.nav-vert-line {
+  border-left: 1px solid white;
+  height: 30px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
 .nav-link:active {
@@ -83,29 +105,34 @@ section {
 	transform:scale(1.06);
 }
 
-.nav-mint-btn:hover {
-  color: white;
+.social-links {
+  transform: rotate(-90deg);
+  font-size: 16px;
+  float: right;
+  margin-top: 40vh;
+  margin-right: -5%;
 }
 
-/* Title and main section: mint.js */
-#mint {
+/* Title and main section: intro.js */
+#intro {
   width: 80%;
   margin: auto;
 }
 
-.title-root {
-  display: block;
-  float: left;
-  text-align: left;
-  width: 50%;
-  margin-left: 20px;
+.intro-wrapper {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+  grid-template-rows: auto;
+  justify-items: center;
 }
 
-.title {
-  font-size: 95px;
-  font-weight: bold;
-  display: inline-block;
-
+.title-root {
+  max-width: 450px;
+  /* float: left;
+  text-align: left;
+  width: 49%;
+  margin: 0 0 0 20px; */
 }
 
 .vert-text {
@@ -119,9 +146,26 @@ section {
   padding-left: 10px;
 }
 
-.title-text {
-  font-weight: 600;
+.title-text-block {
+  font-weight: bold;
   width: 100%;
+  font-size: 40px;
+  margin-top: 12.5vh;
+  text-align: left;
+}
+
+.title-text-row2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #C7CAD1;
+}
+
+#tagline-text-color {
+  color: #2d51C0;
+}
+
+#h-line {
+  width: 30px;
 }
 
 .gif-countdown {
@@ -140,209 +184,96 @@ section {
   text-align: center;
 }
 
-#countdown-title {
-  text-decoration: underline;
+/* Minting Card: intro.js */
+
+.card {
+  border: none;
 }
 
-.countdown {
-  font-weight: bold;
-  margin: auto;
-}
-
-/* Coming soon animation DELETE AFTER COUNTDOWN IS ADDED */
-
-.dot {
-  margin-left: 3px;
-}
-
-.dot1 {
-  animation: visibility 2.5s linear infinite;
- }
- 
- @keyframes visibility {
-  0% {
-  opacity: 1;
-  }
-  65% {
-  opacity: 1;
-  }
-  66% {
-  opacity: 0;
-  }
-  100% {
-  opacity: 0;
-  }
- }
- 
- .dot2 {
-  animation: visibility2 2.5s linear infinite;
- }
- 
- @keyframes visibility2 {
-  0% {
-   opacity: 0;
-  }
-  21% {
-   opacity: 0;
-  }
-  22% {
-   opacity: 1;
-  }
-  65% {
-   opacity: 1;
-  }
-  66% {
-   opacity: 0;
-  }
-  100% {
-   opacity: 0;
-  }
- }
- 
- .dot3 {
-  animation: visibility3 2.5s linear infinite;
- }
- 
- @keyframes visibility3 {
-  0% {
-   opacity: 0;
-  }
-  43% {
-   opacity: 0;
-  }
-  44% {
-   opacity: 1;
-  }
-  65% {
-   opacity: 1;
-  }
-  66% {
-   opacity: 0;
-  }
-  100% {
-   opacity: 0;
-  }
- }
-
-.learn-btn {
-  margin-top: 25px;
-  text-align: center;
-}
-
-/* Minting Cards: mint.js */
-.mint-cards {
+.mint-card {
   display: block;
-  margin: 0 30px 30px 30px;
+  margin-top: 50vh;
+  margin: 15vh 0 30px 40px;
   padding: 10px 0;
   min-height: 20rem;
   float: right;
+  max-width: 350px;
+  border: none;
 }
 
-.normal-mint {
+.short-about-desc {
+  text-align: left;
+  width: 425px;
+  margin: 0 0 0 10px;
+}
+
+.card1 {
+  margin-top: 10vh;
+}
+
+.mint-body {
   display: inline-block;
   width: 450px;
-  height: 225px;
-  background-color: #1d1d1d;
-  border: none;
+  height: 250px;
+  background-color: #040507;
   text-align: left;
-  overflow: hidden;
-  margin-bottom: 15px;
 }
 
-.card-text-row1, .card-text-row2, .card-text-row3, .input {
-  text-align: left;
-  margin-top: -3px;
+.card-heading, .card-contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: baseline;
 }
 
-.card-text-row1, .card-text-row2 {
-  color: #fc3637;
-  font-weight: bold;
-  margin: -14px;
-}
-
-.card-text-row2 {
-  font-size: 45px;
-}
-
-.normal-mint-btn {
-  background-color: #fc3637 !important;
-  border: none !important;
-  border-radius: 1px;
-  font-size: 16px;
-  font-weight: bold;
-  width: 140px;
-  height: 40px;
-}
-
-.normal-mint-btn:hover {
-  color: white;
-}
-
-.mint-card-img {
-  height: 350px;
-  width: 210px;
-  float: left;
-}
-
-.legendary-mint {
-  width: 450px;
-  height: 225px;
-  background-color: #1d1d1d;
-  border: none;
-  text-align: left;
-  overflow: hidden;
-}
-
-.leg-text-row1, .leg-text-row2, .leg-text-row3 {
+.card-text-row, .card-text-row2, .card-text-row3, .input {
   text-align: left;
   margin-top: -3px;
 }
 
-.leg-text-row1, .leg-text-row2 {
-  color: #c6c700;
-  font-weight: bold;
-  margin: -14px;
+.live-dot {
+  height: 10px;
+  width: 10px;
+  background-color: #572D2B;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-.leg-text-row2 {
+.card-text-row {
+  color: #ffffff;
+  font-weight: bold;
   font-size: 45px;
+  border-bottom: 1px solid #3A4458;
 }
 
-.leg-mint-btn {
-  background-color: #ffc107 !important;
-  border: none !important;
-  border-radius: 1px;
+.live-text {
+  color: #4f5665;
   font-size: 16px;
-  font-weight: bold;
-  width: 140px;
-  height: 40px;
-  color: black !important;
+  text-align: end;
+  margin: 15px 0 0 0;
 }
 
 .card-text {
   text-align: center;
 }
 
-.card-title {
-  text-align: center;
-  font-size: 25px;
+.price-header {
+  margin: 0 0 5px 0;
+}
+
+.mint-price {
+  font-size: 28px;
   font-weight: bold;
 }
 
-.card-info {
-  text-align: center;
-  padding-top: 5px;
-  margin-top: 10px;
+.input {
+  margin: -15px 0 0 0;
 }
 
 .mint-amount-input {
-  width: 160px;
+  width: 140px;
+  height: 40px;
   font-size: 14px;
-}
-
-.input {
-  margin-top: -20px;
-  margin-bottom: 12.5px;
+  border-radius: 10px;
 }
 
 input {
@@ -362,10 +293,23 @@ input::-webkit-inner-spin-button {
 /* Global button styles across all components */
 
 .btn {
-  color: white;
-  background: none;
-  border: 1.5px solid #fff;
+  color: #ffffff;
+  background: #0052cc;
   border-radius: 1px;
+}
+
+.nav-connect-btn {
+  color: #ffffff;
+  font-weight: 550;
+  border-radius: 30px;
+  height: 3rem;
+}
+
+.mint-btn {
+  border-radius: 5px;
+  font-weight: 550;
+  width: 140px;
+  height: 40px;
 }
 
 .btn:hover {
@@ -374,28 +318,15 @@ input::-webkit-inner-spin-button {
 	-ms-transform:scale(1.03); /* IE 9 */
 	-o-transform:scale(1.03); /* Opera */
 	transform:scale(1.03);
-  background: none;
-  border: 1.5px solid #fff;
+  /* background: none;
+  border: 1.5px solid #fff; */
 }
 
-.btn:focus {
+/* .btn:focus {
   background: none;
   border: 1.5px solid #fff;
   color: white;
-}
-
-.legendary-watches {
-  display: inline-block;
-  padding: 5px 45px;
-}
-
-.whitelist-btn {
-  font-weight: 550;
-}
-
-.whitelist-btn:hover {
-  color: white;
-}
+} */
 
 .modal {
   color: black;
@@ -483,21 +414,10 @@ hr {
   font-weight: 600;
 }
 
-.about-header, .roadmap-title, .team-title, .watch-title, .sub-heading, .faq-title {
+.about-header, .team-title, .watch-title, .sub-heading{
   font-size: 65px;
   font-weight: bold;
   text-align: center;
-}
-
-.about-title-row1 {
-  margin-left: 35%;
-  margin-right: 65%;
-  margin-bottom: -25px;
-}
-
-.about-title-row2 {
-  margin-left: 45%;
-  margin-right: 55%;
 }
 
 .art-sneakpeak {
@@ -518,73 +438,34 @@ hr {
   border: 3px solid black;
 }
 
-.art-img {
-  height: 150;
-  width: 90;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.card-1 {
-  background-color: skyblue;
-}
-
-.card-2 {
-  background: salmon;
-}
-
-.card-3 {
-  background-color: rgb(255, 247, 173);
-}
-
-/* Empowering Young Local Artists: artist.js */
-.artist-root {
-  width: 80%;
-  margin: auto;
-  text-align: left;
-}
-.artist-title-row1 {
-  margin-right: 15%;
-}
-
-.artist-title-row2 {
-  margin-left: 30%;
-}
-
-.artist-info-block {
-  font-weight: 550;
-  width: 60%;
-  margin: 0 20%;
-}
-
-.artist-info {
-  margin-bottom: 10px;
-}
-
 /* roadmap.js */
-
-.roadmap-title-row1 {
-  margin-left: 37.5%;
-  margin-right: 65%;
-  margin-bottom: -30px;
+#roadmap {
+  margin-top: 10%;
 }
 
-.roadmap-title-row2 {
-  margin-left: 47.5%;
-  margin-right: 55%;
+.roadmap-title {
+  transform: rotate(90deg);
+  font-size: 20px;
+  float: left;
+  margin-top: 20vh;
+  margin-left: 2%;
 }
 
-#v2-map-container {
+.accordion-button, .accordion-body, .accordion-item {
+  border-radius: 25px;
+}
+
+/* #v2-map-container {
   display: grid;
   width: 80%;
   margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 #map-titles {
-  text-align: center;
-  color: #ffc107;
+  text-align: left;
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
 }
@@ -602,19 +483,20 @@ hr {
   width: 275px;
   display: inline-block;
   margin: 0 auto;
+  color: #C7CAD1;
 }
-
 
 .accordion {
   width: 80%;
-  margin: 0 auto;
+  margin: 2% auto;
   font-weight: bold;
 }
 
 .accordion-button {
-  background: #1d1d1d;
-  color: #fdfdfd;
+  background: #0052cc;
+  color: #ffffff;
   font-weight: bold;
+  border-bottom: solid #C7CAD1;
 }
 
 .accordion-button::after {
@@ -623,11 +505,12 @@ hr {
 
 .accordion-button:not(.collapsed) {
   color: #fdfdfd;
-  background-color: #1d1d1d;
+  background-color: #0052cc;
 }
 
 .accordion-item {
-  background-color: #000000;
+  background-color: #3A4458;
+  margin: 10px 0 0 0;
 }
 
 #accordion-header {
@@ -638,49 +521,18 @@ hr {
   text-align: left;
 }
 
-/* WATCH INVENTORY PICTURES: watchgallery.js */
-.watch-title-row1 {
-  margin-left: 37.5%;
-  margin-right: 65%;
-  margin-bottom: -30px;
-}
-
-.watch-title-row2 {
-  margin-left: 47.5%;
-  margin-right: 55%;
-}
-
-#watch-body {
-  text-align: center;
-}
-
-.img-slide {
-  display: block;
-  margin: auto;
-  border-radius: 50%;
-  width: 350px;
-  height: 450px;
-  margin-bottom: 100px;
-  object-fit: scale-down;
-}
-
-.carousel-caption {
-  font-weight: bold;
-  margin-bottom: -25px;
-}
-
-#img-text {
-  margin-bottom: 5px;
-}
-
 /* FAQ section: faq.js */
+.faq-title {
+  transform: rotate(-90deg);
+  font-size: 20px;
+  float: right;
+  margin-top: 20vh;
+  margin-right: 3%;
+}
+
 .faq {
   width: 80%;
   margin: auto;
-}
-
-.faq-title {
-  margin-bottom: 30px;
 }
 
 /* .faq-wrapper {
@@ -711,7 +563,7 @@ hr {
 }
 
 .faq-nav {
-  max-width: 250px;
+  max-width: 275px;
   text-align: left;
   align-self: start;
 }
@@ -733,15 +585,17 @@ hr {
   border: 1px solid #fdfdfd;
   cursor: pointer;
   font-weight: 650;
+  border-radius: 25px;
+  margin-top: 5px;
 }
 
 #ques-title:hover {
-  background:#2e2e2e;
+  background:#0052cc;
   transition: all 0.5s ease-in-out;
 }
 
 #ques-title:active {
-  background: #2e2e2e;
+  background: #0052cc;
 }
 
 
@@ -756,7 +610,7 @@ hr {
   border-bottom: 1px solid #fdfdfd;
   line-height: 50px;
   margin: 0 15px 20px 20px;
-  color:#ffc107;
+  color:#ffffff;
   text-align: left;
 }
 
@@ -784,35 +638,20 @@ hr {
   max-width: 415px;
 }
 
-a {
-  color: #fdfdfd;
-}
-
-a:hover {
-  color: #fdfdfd;
-}
-
 /* TEAM CARDS: team.js */
+.team-header {
+  transform: rotate(90deg);
+  font-size: 20px;
+  float: left;
+  margin-top: 20vh;
+  margin-left: 4%;
+}
+
 .team-root {
   display: block;
   text-align: center;
   width: 80%;
-  margin: auto;
-}
-
-.team-header {
-  text-align: center;
-}
-
-.team-title-row1 {
-  margin-left: 40%;
-  margin-right: 65%;
-  margin-bottom: -30px;
-}
-
-.team-title-row2 {
-  margin-left: 47.5%;
-  margin-right: 52.5%;
+  margin:  10% auto;
 }
 
 .card-group {
@@ -820,12 +659,14 @@ a:hover {
 }
 
 .team-cards {
-  background-color: #1d1d1d !important;
+  background-color: #3A4458 !important;
   min-width: 150px;
   max-width: 275px;
   height: 315px;
   margin: 0 auto;
   display: inline-block;
+  border-radius: 20px;
+
 }
 
 .team-cards-row1, .team-cards-row2 {
@@ -858,7 +699,11 @@ a:hover {
 
 #team-name {
   font-weight: bold;
-  color: #fc3637;
+  color: #ffffff;
+}
+
+#team-role {
+  color: #C7CAD1;
 }
 
 /* Media queries for different screen sizes */
@@ -874,16 +719,12 @@ a:hover {
   }
 
   .title {
-    display: none;
+    display: block;
+    text-align: center;
   }
 
   #nav-title {
     display: none;
-  }
-
-  .small-title {
-    display: block;
-    text-align: center;
   }
 
   #sm-nav-title {
@@ -914,21 +755,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width:576px) {
-  .small-title {
-    display: none;
-  }
-
-  #sm-nav-title {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 415px) {
-  .story-root {
-    font-size: 16px;
-  }
-  
   .team-members {
     font-size: 16px;
   }
@@ -942,7 +769,7 @@ a:hover {
 }
 
 @media screen and (min-width: 800px) {
-  .small-roadmap-title, .small-watch-title, .small-about-header, .small-team-title, .small-artist-header, .small-artist-info-block {
+  .small-roadmap-title, .small-watch-title {
     display: none;
   }
 }
@@ -960,7 +787,7 @@ a:hover {
     width: 80%;
   }
 
-  .title, .vert-text, .card-img, #art-cards, .roadmap-title, .watch-title, .team-title, .about-header, .arrow, .artist-title-row1, .artist-title-row2, .artist-info-block {
+  .title, .vert-text, .card-img, #art-cards, .watch-title, .team-title, .about-header, .arrow {
     display: none;
   }
 
@@ -976,13 +803,13 @@ a:hover {
     float: none;
   }
 
-  .mint-cards, .gif-countdown {
+  .mint-card, .gif-countdown {
     width: 80%;
     display: inline-block;
     text-align: center;
   }
 
-  .normal-mint, .legendary-mint {
+  .mint-body {
     width: 250px;
     height: 225px;
     text-align: center;
@@ -1026,6 +853,11 @@ a:hover {
     margin: 0;
   }
 
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
   .story-root {
     font-size: 16px;
     text-align: left;
@@ -1037,42 +869,11 @@ a:hover {
     text-align: center;
   }
 
-  .small-about-header {
-    font-size: 40px;
-    margin-left: 20px;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  .small-about-title-row1 {
-    margin-bottom: -10px;
-  }
-
-  .small-artist-header {
-    font-weight: 550;
-    font-size: 25px;
-    margin: auto;
-  }
-  
-  .small-artist-info-block {
-    font-weight: 550;
-    width: 100%;
-  }
 
   #roadmap {
     max-width: 100%;
     max-height: auto;
     display: block;
-  }
-
-  .small-roadmap-title {
-    font-size: 50px;
-  }
-
-  .small-roadmap-title-row1, .small-roadmap-title-row2 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: -10px;
   }
 
   .small-watch-title {
@@ -1089,11 +890,6 @@ a:hover {
     width: 100px;
     margin: auto;
     display: block;
-  }
-  
-  .small-team-title {
-    font-size: 40px;
-    font-weight: bold;
   }
 
   .team-root {

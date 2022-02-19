@@ -6,6 +6,7 @@ import Web3Modal from 'web3modal'
 import WalletConnectProvider from "@walletconnect/web3-provider";
 
 import Button from 'react-bootstrap/Button'
+require('dotenv').config();
 
 export default class ConnectButton extends React.Component {
   
@@ -14,54 +15,57 @@ export default class ConnectButton extends React.Component {
     }
 
     async componentDidMount() {
-        await this.loadWeb3()
-        await this.loadBlockchainData()
+        //await this.loadWeb3()
+        //await this.loadBlockchainData()
         await this.getWeb3()
     }
 
-    async loadBlockchainData() {
-        const web3 = window.web3
+    // async loadBlockchainData() {
+    //     const web3 = window.web3
         
-        const accounts = await web3.eth.getAccounts()
-        this.setState({ account: accounts[0]})
-    }
+    //     // const accounts = await web3.eth.getAccounts()
+    //     // this.setState({ account: accounts })
 
-    loadWeb3 = async () => {
-        if (window.ethereum) {
-          window.web3 = new Web3(window.ethereum)
-          await window.ethereum.request({ method: "eth_requestAccounts" })
-        }
-        else if (window.web3) {
-          window.web3 = new Web3(window.web3.currentProvider)
-        }
-        else {
-          window.alert('Non-Ethereum browser detected. Refresh your page with your browser wallet!')
-        }
+    //     // console.log(accounts)
+    // }
 
-        const chainId = await window.ethereum.request({
-            method: 'eth_chainId'
-        })
+    // loadWeb3 = async () => {
+    //     // if (window.ethereum) {
+    //     //   window.web3 = new Web3(window.ethereum)
+    //     //   await window.ethereum.request({ method: "eth_requestAccounts" })
+    //     // }
+    //     // else if (window.web3) {
+    //     //   window.web3 = new Web3(window.web3.currentProvider)
+    //     // }
+    //     // else {
+    //     //   window.alert('Non-Ethereum browser detected. Refresh your page with your browser wallet!')
+    //     // }
+    //     window.web3 = new Web3(window.web3.currentProvider)
 
-        const web3 = window.web3
+    //     const chainId = await window.ethereum.request({
+    //         method: 'eth_chainId'
+    //     })
+
+    //     const web3 = window.web3
         
-        const accounts = await web3.eth.getAccounts()
+    //     const accounts = await web3.eth.getAccounts()
 
-        if (chainId !== '0x1') {
-            alert("Please connect to Mainnet");
-        } else {
-            let wallet = accounts[0]
-            this.setState({
-                account: wallet
-            })
-        }
-      }
+    //     if (chainId !== '0x1') {
+    //         alert("Please connect to Mainnet");
+    //     } else {
+    //         let wallet = accounts[0]
+    //         this.setState({
+    //             account: wallet
+    //         })
+    //     }
+    //   }
 
       async getWeb3() {
         const providerOptions = {
           walletconnect: {
             package: WalletConnectProvider, // required
             options: {
-              infuraId: "https://mainnet.infura.io/v3/39c30420efe84c7fbcc7f1579604e64f", // required
+              infuraId: process.env.INFURA_ID, // required
               mobileLinks: [
                 "rainbow",
                 "metamask",
@@ -89,19 +93,21 @@ export default class ConnectButton extends React.Component {
           providerOptions // required
         });
         
+        // connect to provider
         const provider = await web3Modal.connect();
         
         let web3 = new Web3(provider);
 
-        web3 = new Web3(provider);
-            return web3;
+        // set account state = account address pulled from web3.eth
+        const accounts = await web3.eth.getAccounts();
+        this.setState({ account: accounts[0]})
       }
-      
+
     render() {
     
     return this.state.account ? (
         
-        <Button variant="light" className="nav-mint-btn">
+        <Button className="nav-connect-btn">
           <div>
             {/* check account is defined and then slice the string */}
             {this.state.account &&
@@ -112,7 +118,7 @@ export default class ConnectButton extends React.Component {
           </div>
         </Button>
     ) : (
-      <Button onClick={this.getWeb3} variant="light" className="nav-mint-btn">Connect Wallet</Button>
+      <Button onClick={this.getWeb3} className="nav-connect-btn">Connect Wallet 👋</Button>
     );
     }
   }

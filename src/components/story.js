@@ -13,33 +13,6 @@ export default class Story extends React.Component {
     render() {
         return(
             <div className="story-root" id="about">
-                <div className="about-header" id="headers">
-                    <div className="about-title-row1">ABOUT</div>
-                    <div className="about-title-row2">TEMPOS</div>
-                </div>
-
-                <div className="small-about-header" id="headers">
-                    <div className="small-about-title-row1">ABOUT</div>
-                    <div className="small-about-title-row2">TEMPOS</div>
-                </div>
-
-                <div className="art-sneakpeak" id="art-cards">
-                    <Card className="card-art">
-                        <Card.Body className="card-1">
-                            <Card.Img className="art-img" src={spence} loading="lazy"/>
-                        </Card.Body>
-                    </Card>
-                    <Card className="card-art">
-                        <Card.Body className="card-2">
-                            <Card.Img className="art-img" src={walking} loading="lazy"/>
-                        </Card.Body>
-                    </Card>
-                    <Card className="card-art">
-                        <Card.Body className="card-3">
-                            <Card.Img className="art-img" src={kev} loading="lazy"/>
-                        </Card.Body>
-                    </Card>
-                </div>
 
                 <div>
                     <p className="story-enter">
