@@ -32,8 +32,8 @@ export default class Team extends React.Component {
                             <Card.Body>
                                 <Card.Text>
                                     <div className="team-members">
-                                        <div id="team-name">Milton</div>
-                                        <div id="team-role">3D Artist</div>
+                                        <div id="team-name">Gaquino</div>
+                                        <div id="team-role">3D Art Director</div>
                                     </div>
                                 </Card.Text>
                             </Card.Body>
@@ -121,7 +121,7 @@ export default class Team extends React.Component {
                                 <Card.Text>
                                     <div className="team-members">
                                         <div id="team-name">Miguel Storer</div>
-                                        <div id="team-role">Art Director</div>
+                                        <div id="team-role">Artist</div>
                                         <div id="team-socials">
                                             <a href="https://twitter.com/stolabonline" target="_blank" rel="noreferrer">
                                                 <img src={twitter} alt="Twitter"/>
@@ -136,8 +136,8 @@ export default class Team extends React.Component {
                             <Card.Body>
                                 <Card.Text>
                                 <div className="team-members">
-                                    <div id="team-name">Kiana Diaz</div>
-                                    <div id="team-role">Artist</div>
+                                    <div id="team-name">Cryptopsy</div>
+                                    <div id="team-role">Community</div>
                                     <div id="team-socials">
                                         <a href="https://twitter.com/kianadiazz" target="_blank" rel="noreferrer">
                                             <img src={twitter} alt="Twitter"/>
