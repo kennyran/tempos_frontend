@@ -129,6 +129,7 @@ section {
 
 .title-root {
   max-width: 450px;
+  z-index: 1;
   /* float: left;
   text-align: left;
   width: 49%;
@@ -199,12 +200,14 @@ section {
   float: right;
   max-width: 350px;
   border: none;
+  z-index: 1;
 }
 
 .short-about-desc {
   text-align: left;
   width: 425px;
   margin: 0 0 0 10px;
+  z-index: 1;
 }
 
 .card1 {
@@ -290,6 +293,19 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+video {
+  position: absolute;
+  min-width: 75vw;
+  max-height: 75vh;
+  object-fit: contain;
+  margin-left: -35%;
+}
+
 /* Global button styles across all components */
 
 .btn {
@@ -322,23 +338,8 @@ input::-webkit-inner-spin-button {
   border: 1.5px solid #fff; */
 }
 
-/* .btn:focus {
-  background: none;
-  border: 1.5px solid #fff;
-  color: white;
-} */
-
 .modal {
   color: black;
-}
-
-.form-submit {
-  background-color: #1d1d1d;
-  border-radius: 5px;
-}
-
-.form-submit:hover, .form-submit:focus {
-  background-color: #1d1d1d;
 }
 
 @media screen and (max-width: 1324px) {
@@ -369,20 +370,6 @@ input::-webkit-inner-spin-button {
     margin: auto;
   }
   
-}
-
-span.transition-arrow {
-  font-size: 125px;
-  font-weight: bold;
-}
-
-.arrow {
-  text-align: center;
-  width: 100px;
-  transform-origin: center left;
-  transform:rotate(90deg);
-  margin: -50px 50% 50px 50%;
-  margin-top: 10px;
 }
 
 /* Line breaks between sections */
@@ -534,24 +521,6 @@ hr {
   width: 80%;
   margin: auto;
 }
-
-/* .faq-wrapper {
-  width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  display: flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  justify-content: flex-start;
-  -webkit-box-align: start;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -ms-flex-align: start;
-  -ms-flex-wrap: wrap;
-  align-items: flex-start;
-  flex-wrap: wrap;
-} */
 
 .full-faq {
   height: auto;
@@ -787,13 +756,27 @@ hr {
     width: 80%;
   }
 
-  .title, .vert-text, .card-img, #art-cards, .watch-title, .team-title, .about-header, .arrow {
+  .title, .vert-text, .card-img, #art-cards, .watch-title, .team-title, .about-header, #video, .nav-vert-line, #roadmap-ques-title, .social-links {
     display: none;
   }
 
-  .title-text {
-    font-size: 16px;
+  .title-text-block {
+    font-size: 25px;
     font-weight: 600;
+  }
+
+  .intro-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-text-block, .mint-card {
+    margin: auto 25px;
+  }
+
+  .short-about-desc {
+    margin: 0 auto;
+    max-width: 250px;
   }
 
   #mint {
@@ -809,9 +792,13 @@ hr {
     text-align: center;
   }
 
+  .mint-card {
+    margin: 0 0 0 40px;
+  }
+
   .mint-body {
-    width: 250px;
-    height: 225px;
+    width: 300px;
+    height: 250px;
     text-align: center;
   }
 
@@ -869,7 +856,6 @@ hr {
     text-align: center;
   }
 
-
   #roadmap {
     max-width: 100%;
     max-height: auto;
@@ -896,11 +882,6 @@ hr {
     font-size: 16px;
   }
 
-  /* .card-group {
-    width: 100%;
-    margin-left: 10%;
-  } */
-
   .team-cards {
     width: 100%;
     margin: auto;
@@ -914,10 +895,6 @@ hr {
   .faq-list {
     flex-wrap: nowrap;
     justify-content: center;
-  }
-  
-  span {
-    display: none;
   }
 
   .faq-nav {

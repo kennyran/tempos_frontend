@@ -15,7 +15,7 @@ export default class TemposNav extends React.Component {
     render() {
         return(
             <div className="temposNav">
-                <Navbar collapseOnSelect expand="sm">
+                <Navbar collapseOnSelect expand="sm" variant="dark">
                     <Container> 
                         <Navbar.Brand>
                                 {/* <img src={logo} width="96" height="96" className="d-inline-block align-top" id="logo-header" alt="Tempos Logo"/> */}

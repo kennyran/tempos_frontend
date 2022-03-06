@@ -10,7 +10,7 @@ import Community from './community'
 //   } from 'react-router-dom';
 //   import Mint from './mint'
 
-// import bgVideo from '../img/intro-video/0001-0150_Slomo.mp4'
+import bgVideo from '../img/intro-video/0001-0150_Slomo.mp4'
 
 export default class Intro extends React.Component {
 
@@ -22,9 +22,9 @@ export default class Intro extends React.Component {
 
         return(
             <div>
-                {/* <video autoPlay id="video">
+                <video autoPlay id="video">
                     <source src={bgVideo} type="video/mp4"/>
-                </video> */}
+                </video>
                 <Community />
                 <div id="intro">
                     <div className="intro-wrapper">
@@ -46,12 +46,10 @@ export default class Intro extends React.Component {
                                 </p>
                                 <p className="title-text-row2">
                                     Limited supply 
-                                    <span id="h-line"> </span> 
+                                    <span id="h-line"> - </span> 
                                     1000 items</p>
                             </div>
                         </div>
-
-                        {/* <div className="column-2-whitespace"></div> */}
 
                         {/* <Router>
                             <Button>

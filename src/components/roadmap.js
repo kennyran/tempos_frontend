@@ -28,22 +28,22 @@ export default class Roadmap extends React.Component {
                                 <ul className="faq-list">
                                     <li id="ques-title" onClick={() => this.setState({ map1: true, map2: false, map3: false, map4: false })}>
                                         <div id="ques-1">
-                                            1. <span>Genesis Collection</span>
+                                            1. <span id="roadmap-ques-title">Genesis Collection</span>
                                         </div>
                                     </li>
                                     <li id="ques-title" onClick={() => this.setState({ map2: true, map1: false, map3: false, map4: false })}>
                                         <div id="ques-2">
-                                            2. <span>Web3 Watch Marketplace by Tempos</span>
+                                            2. <span id="roadmap-ques-title">Web3 Watch Marketplace by Tempos</span>
                                         </div>
                                     </li>
                                     <li id="ques-title" onClick={() => this.setState({ map3: true, map1: false, map2: false, map4: false })}>
                                         <div id="ques-3" >
-                                            3. <span>Monthly Watch Drops</span>
+                                            3. <span id="roadmap-ques-title">Monthly Watch Drops</span>
                                         </div>
                                     </li>
                                     <li id="ques-title" onClick={() => this.setState({ map4: true, map1: false, map2: false, map3: false })}>
                                         <div id="ques-4">
-                                            4. <span>Metaverse watch store development</span>
+                                            4. <span id="roadmap-ques-title">Metaverse watch store development</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -74,7 +74,7 @@ export default class Roadmap extends React.Component {
                                         - Anyone can enter the site and look at our watch inventory for sale, but only verified Tempos members will be able to purchase items in the marketplace
                                     </p>
                                     <p className="inner-faq">
-                                        - Payment for watches will be in ETH
+                                        - Payment for watches will be in ETH or fiat currency
                                     </p>
                                 </div> }
                                 {this.state.map3 && <div className="faq-ans" id="faq-3">
