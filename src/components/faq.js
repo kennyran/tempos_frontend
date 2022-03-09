@@ -30,13 +30,13 @@ export default class FAQ extends React.Component {
                                     <div id="v2-map-container">
                                         <div>
                                             <div id="map-titles">
-                                                Purchasing on the marketplace will be limited to holders of the Genesis Collection
+                                                - Purchasing on the marketplace will be limited to holders of the Genesis Collection
                                             </div>
                                             <div id="map-titles">
-                                                There will be monthly drops of watches, varying in style, price, and quantities, for our members to purchase with Ethereum
+                                                - There will be monthly drops of watches, varying in style, price, and quantities, for our members to purchase with Ethereum
                                             </div>
                                             <div id="map-titles">
-                                                It will be a first come, first serve basis with the watches listed on the marketplace to our holders
+                                                - It will be a first come, first serve basis with the watches listed on the marketplace to our holders
                                             </div>
                                         </div>
                                     </div>

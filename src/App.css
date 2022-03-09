@@ -1,13 +1,13 @@
 /* Global Styles */
 .App {
-  background: #040507;
+  background: #000000;
   color: #ffffff;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background: #040507;
+  background: #000000;
   color: #ffffff;
 }
 
@@ -218,7 +218,7 @@ section {
   display: inline-block;
   width: 450px;
   height: 250px;
-  background-color: #040507;
+  background: transparent;
   text-align: left;
 }
 
@@ -749,6 +749,7 @@ hr {
     display: block;
     float: none;
   }
+  
   .title-root {
     font-size: 18px;
     text-align: left;
@@ -775,7 +776,7 @@ hr {
   }
 
   .short-about-desc {
-    margin: 0 auto;
+    margin: 0 -7.5%;
     max-width: 250px;
   }
 
@@ -790,6 +791,15 @@ hr {
     width: 80%;
     display: inline-block;
     text-align: center;
+  }
+  
+  .mint-amount-input {
+    width: 120px;
+  }
+
+  .mint-btn {
+    margin-left: 20px;
+    width: 100px;
   }
 
   .mint-card {
@@ -812,6 +822,10 @@ hr {
 
   .gif {
     margin-top: 10px;
+  }
+
+  .card1 {
+    margin: 0 -12.5%;
   }
 
   .countdown-card {
@@ -862,6 +876,10 @@ hr {
     display: block;
   }
 
+  #map-titles {
+    width: 275px;
+  }
+
   .small-watch-title {
     font-size: 40px;
     font-weight: bold;
@@ -878,6 +896,10 @@ hr {
     display: block;
   }
 
+  .accordion {
+    margin-left: 10%
+  }
+
   .team-root {
     font-size: 16px;
   }
@@ -890,6 +912,14 @@ hr {
   .team-cards-row1, .team-cards-row2 {
     display: inline-block;
     width: 80%;
+  }
+
+  .faq-title, .roadmap-title, .team-header {
+    text-align: center;
+    transform: rotate(0deg);
+    float: none;
+    margin: auto;
+    margin-top: 15%;
   }
 
   .faq-list {

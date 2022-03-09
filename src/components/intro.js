@@ -22,8 +22,12 @@ export default class Intro extends React.Component {
 
         return(
             <div>
-                <video autoPlay id="video">
-                    <source src={bgVideo} type="video/mp4"/>
+                <video  
+                    autoPlay
+                    src={bgVideo}
+                    type="video/mp4"
+                    id="video"
+                >
                 </video>
                 <Community />
                 <div id="intro">
