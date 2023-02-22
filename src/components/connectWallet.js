@@ -89,7 +89,6 @@ export default class ConnectButton extends React.Component {
         
         const web3Modal = new Web3Modal({
           network: "mainnet", // optional
-          cacheProvider: true, // optional
           providerOptions // required
         });
         

@@ -7,8 +7,6 @@ export default class Mint extends React.Component {
     render() {
         return(
             <div>
-                
-                yeet
             </div>
         )
     }
